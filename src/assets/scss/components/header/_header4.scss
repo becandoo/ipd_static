@@ -1,0 +1,24 @@
+#header4  { position:relative; padding:2px; overflow:hidden;  }
+#header4 div { overflow:hidden; white-space:nowrap;  }
+
+#header4 ul li:first-child { padding:3px 3px 0 5px; margin-right:10px;}
+#header4 ul li:nth-child(2) { margin-right:20px; }
+
+
+#header4 div.search { font-size:120%; position:relative; margin-right:40px; overflow:hidden; width:200px;  background-color:#ffffff; box-sizing: initial;}
+#header4 div.search  input { float:left; position:relative; background-color:transparent; margin:0; padding:2px 4px; width:166px; height:22px; }
+
+#header4 div.search span { position:absolute; right:0; top:0;  z-index:10;  cursor:pointer; background-color:#ffcc00; font-family:FontAwesome; padding:4px; }
+
+#header4 ul li.freeship,
+#header4 ul li.notax { text-transform:uppercase; }
+
+#header4 ul li:last-child { padding:4px 5px 0 2px; }
+#header4 img.methods  { height:20px; border:1px solid #ffffff; }
+
+#header4 div a { color:#ffffff; }
+#header4 div a:hover { color:#ffff00; }
+
+//notes
+//1. added box-sizing: initial; to #header4 div.search { }
+//2. removed border:0; from #header4 div.search  input { }

@@ -1,0 +1,34 @@
+#footerarea { 
+	display:block; 
+	overflow:hidden; 
+	position:relative; 
+	float:left; 
+	clear:both; 
+	width:100%; 
+	color:#ffffff; 
+	--background-color:#004499; 
+	padding:20px 0 20px 0; 
+	border-top:1px solid #649Bf7;
+	background: #004499 url('../images/50_year_logo_200px.png') no-repeat right bottom; 
+	background-size: 200px 178px;
+}
+#footerarea a:link, #footerarea a:visited { color:#ffffff; }
+#footerarea a:hover { color:#ffff00 !important; }
+#footerarea div.container { display:block; overflow:hidden; float:left; width:155px; min-height:130px; padding:0 0 0 35px; }
+#footerarea div.container ul { position:relative; padding:0 0 0 10px; margin:0;  }
+#footerarea div.container ul h2 { color:#ffffff;  margin:0 0 5px 0; }
+#footerarea div.container ul > li:first-child { padding-left:0; }
+#footerarea div.container ul li { position:relative; list-style-type:none; padding-left:3px; }
+#footerarea div.faq { display:block; overflow:hidden; float:left; clear:both; text-align:center; padding-top:10px; width:100%;   }
+#footerarea p { text-align:center; }
+#footerarea div.copyright { display:block; overflow:hidden; float:left; clear:both; text-align:center; padding-top:10px; width:100%; font-size:80%; color:#999999; }
+
+#footerarea div.copyright a:link, #footerarea div.copyright a:visited { color:#649Bf7; }
+
+#footerarea div.contactinfo { 
+	display:block; 
+	clear:both; 	
+	overflow:hidden; 
+	margin:10px;
+	font-size:130%;
+	}

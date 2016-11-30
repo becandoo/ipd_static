@@ -1,0 +1,292 @@
+
+pre { color: #009900; }
+
+.warning { font-style: normal; font-weight: bold; color: red; font-size: 7.5pt; }
+
+.carryonshopping { padding-top: 5px; }
+
+.promotionfooter { color: #aaa; margin-top: 8px; }
+
+.compare td { border-top: solid 1px #CBD5DB; background-image: url("/skin/images/back_fade2.png"); background-position: top left; background-repeat: repeat-x; }
+
+.errors { display: block; clear:both; color: #ff0000; background-color: #FFEEEE; border: solid 1px red; margin: 20px 0; padding: 20px; }
+
+.errors label { border-bottom: dotted 1px red; }
+.success { display: block; background-color:#CCFFCC; width: 880px; color: #009900; border: solid 1px #006600; margin: 18px; padding: 12px; }
+
+
+
+
+.checkout .section { width: 99%; padding-top: 10px; background-image: url("/skin/images/back_fade3.png"); background-position: top left; background-repeat: no-repeat; }
+
+#fieldsrequired {
+	color: #888888;
+	clear:left;
+}
+
+.shippingmethodstable .subheader .name {
+	font-weight: bold;
+	font-size: 14px;
+	color: #DD7700;
+	margin-bottom: 4px;
+	padding-bottom: 0px;
+}
+
+/* ------------ Customer --------------------------------------------- */
+.customer .section {
+	background-image: url("/skin/images/back_fade3.png");
+	background-position: top left;
+	background-repeat: no-repeat;
+	width: 100%;
+	padding-top: 15px;
+	padding-bottom: 10px;
+	margin-bottom: 5px;
+	display:block;
+	overflow:hidden;
+}
+
+.vieworder { margin-bottom: 15px; }
+
+.page .cutout { margin: 12px; border-top: solid 1px #CBD5DB; border-left: solid 1px #CBD5DB; border-bottom: solid 1px #E2EAEF; border-right: solid 1px #E2EAEF; }
+.page .cutout_left { float: left; }
+.page .cutout_right { float: right; }
+.page .right { text-align: right; }
+
+.pad_shortformat { padding: 20px; }
+
+div.spacer {  	clear: both; }
+
+form { margin:0; display:inline; padding:0; }
+
+.column2 { padding-left:180px; margin-bottom: 20px; width: auto; }
+
+textarea { width: auto; }
+
+
+/* step 1 - login form */
+.emailreminder {
+	width: 100%;
+	padding-top: 15px;
+	background-image: url("/skin/images/back_fade3.png");
+	background-position: top left;
+	background-repeat: no-repeat;
+}
+
+/* step 3 - shipping methods */
+.shippingmethodstable {
+	width: 100%;
+	padding-bottom: 8px;
+}
+
+.shippingmethodstable .price_1, .shippingmethodstable .price_2, .shippingmethodstable .price {
+	text-align: right;
+	font-size:14px;
+	white-space: nowrap;
+	padding-right: 30px;
+}
+
+.euvat {
+	padding-bottom: 8px;
+}
+
+.checkout textarea {
+	width: 500px;
+}
+
+.carddetails {
+	width: 100%;
+}
+
+.carddetails .inside {
+	padding: 0px;
+}
+
+.shippingmethodline strong {
+	padding-right: 16px;
+}
+
+.step4 input.submit {
+	margin-left: 0px;
+}
+
+#strMailingListHTML {
+	display: block;
+	margin: 10px 0 5px 0;
+}
+
+
+/* Billing details typography */
+.billtotal em {
+	font-style: normal;
+}
+
+.billtotal, .gatewaymessage {
+	margin: 10px 0 10px 0;
+}
+
+.billtotal {
+	font-size: 10pt;
+}
+
+#termspopup {
+	font-size: 7.5pt;
+	}
+
+
+
+/* ------------ Shipping rates --------------------------------------- */
+.shippingtable {
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.shippingtable .price, .shippingtable .price_1, .shippingtable .price_2 {
+	text-align: right;
+	white-space: nowrap;
+}
+
+/* ------------ Customer --------------------------------------------- */
+
+.wishliststable .date {
+	width: 130px;
+}
+
+.wishliststable .actions, .orderhistory .view {
+	text-align: right;
+	width: 130px;
+}
+
+.orderdetails label {
+	width: 30%;
+	float: left;
+}
+
+.orderdetails div {
+	float: left;
+	margin-bottom: 4px;
+}
+
+.orderdetails br {
+	display: block;
+	clear: both;
+}
+
+.orderdetails div.tick {
+	float: none;
+	margin-bottom: 0;
+}
+
+.orderdetails div.tick img {
+	margin-right: 8px;
+}
+
+
+.customer .links div {
+	width: 48%;
+	margin: 0;
+	padding: 0;
+	float: left;
+}
+
+.wishlist #chkUpdateItems {
+	margin: 0;
+	width: 20px;
+	text-align: left;
+	float: left;
+	padding: 0;
+}
+
+
+	
+
+.generalspace {
+	display: block;
+	height: 1px;
+}
+
+
+.quantitydiscount .link {
+	padding: 5px 0px 5px 0px;
+}
+
+
+
+
+
+/* ------------ Wish List -------------------------------------------- */
+.wishlist .section {
+	margin-bottom: 25px;
+}
+
+.wishlist .explanation {
+	margin: 0px 0px 15px 0px;
+	display: block;
+	width: 90%;
+	font-size: 7.5pt;
+}
+
+	
+
+
+
+
+.extrainfolinks {
+	margin: 8px 0px 10px 0px;
+	overflow: hidden;
+	font-size: 7.5pt;
+}
+
+.extrainfolinks a {
+	white-space: nowrap;
+}
+
+.extrainfolinks .largeview {
+	margin: 5px 0px 0px 0px;
+	display: inline;
+}
+
+.extrainfolinks .moreinfo {
+	margin: 5px 0px 0px 0px;
+}
+
+.extrainfolinks .compare {
+	margin: 5px 0px 0px 0px;
+}
+
+.extrainfolinks .compare a {
+	font-weight: normal;
+}
+
+.extrainfolinks img {
+	float: none;
+	margin: 0;
+}
+
+
+.nowrap {
+	white-space: nowrap;
+}
+
+
+
+
+/* Breadcrumb trail  
+.breadcrumbtrail {
+	padding: 3px 3px 3px 0px;
+	margin-bottom: 10px;
+}*/
+
+.breadcrumbtrail ul {
+	margin-left: 0;
+	padding-left: 0;
+	display: inline;
+	border: none;
+} 
+
+.breadcrumbtrail ul li {
+	margin-left: 0;
+	border: none;
+	list-style: none;
+	display: inline;
+}
+

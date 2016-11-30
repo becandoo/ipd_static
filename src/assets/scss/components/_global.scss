@@ -1,0 +1,44 @@
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('fonts/fontawesome-webfont.eot?v=4.2.0');
+  src: url('fonts/fontawesome-webfont.eot?#iefix&v=4.2.0') format('embedded-opentype'), 
+      url('fonts/fontawesome-webfont.woff?v=4.2.0') format('woff'), 
+      url('fonts/fontawesome-webfont.ttf?v=4.2.0') format('truetype'), 
+      url('fonts/fontawesome-webfont.svg?v=4.2.0#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body { 
+    font-size: 10pt;
+	margin:0;
+	color: #000000; 
+}
+
+  
+div.noscript { position:relative; padding:5px; font-size:160%; font-weight:bold; text-align:center; background-color:#ffff00; color:#ff0000; }
+	
+th { text-align: left; font-size:10px; color:#999999; padding-right:5px; white-space:nowrap; }
+
+a:link, a:visited { color:black; text-decoration:none; }
+
+a:hover { color: #0000ff; cursor:pointer; }
+
+#maindiv { width:970px; margin:0 auto 0 auto;  display:block; overflow:hidden;}
+
+
+//notes
+//1. removed img {border:0}
+//2. removed *html {font-size:10px;}
+//3. removed background-color: #444444; font-family:Arial,Verdana,Tahoma,Helvetica,sans-serif; from body {}
+//4. removed the following typography tags:
+//h1,h2,h3,h4,h5 { color: #004499; clear:both; margin: 5px 0; } 
+//h1 {  font-size: 200%;  margin: 8px 0;  }
+//h2 { font-size: 175%; }
+//h3 { font-size: 160%; }
+//h4 { font-size: 120%; }
+//h5 { font-size: 100%; color: #336677; text-transform: uppercase; letter-spacing: -1px; padding: 2px 2px 2px 0px; text-align: left; font-weight: normal; }
+//p { max-height:999999px; }
+//5. removed hr { border-width:1px; height:1px; color:#6666FF; }
+//6. removed  border:1px solid #000000; from #maindiv {}
+//6. changed color:#004499; to color: black on a:link, a:visited { }

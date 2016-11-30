@@ -1,0 +1,15 @@
+#headertopbar { position:relative; width:100%; height:38px; overflow:hidden; color: black;}
+#headertopbar img.logo { position: absolute; width:146px; height:32px; top:3px; left:3px; }
+#headertopbar span { display:inline-block; position:absolute; line-height:38px; top:0; }
+#headertopbar span.slogan { left:230px; font-size:130%; text-align:left; width: 580px; overflow:hidden; }
+#headertopbar span.phone  { right:5px; font-size:170%; }
+#headertopbar span.phone > a { color: black;}
+#headertopbar a.wpd { display:inline-block; position: absolute; width:35px; height:24px; top:7px; left:165px; background: transparent url('https://www.wpdusa.com/css/images/wpd-logo-header.jpg') no-repeat left top;  background-size:100% 100%;}
+
+
+//notes
+//1. removed background-color:#004499; from #headertopbar {}
+//2. replaced color: #ffffff; #headertopbar {} old: color: #ffffff; new: color: black;
+//3. replaced color: #ffffff; #headertopbar span.phone > a {} old: color: #ffffff; new: color: black;
+//4. removed #headertopbar span.phone > a:hover { color:#ffff00; }
+//5. changed background: transparent url('/css/images/wpd-logo-header.jpg') from #headertopbar a.wpd { } to background: transparent url('https://www.wpdusa.com/css/images/wpd-logo-header.jpg')

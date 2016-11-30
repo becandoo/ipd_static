@@ -1,0 +1,8 @@
+#trustelements { display:block; clear:both; float:left; width:100%; background-color:#ffffff; padding:0px 10px 10px 10px; margin:0; }
+#trustelements div.wrapper { position:relative; display:block; overflow:hidden; margin:0 auto 0 auto; width:665px; white-space:nowrap; }
+#trustelements div.wrappericons { position:relative; display:block; overflow:hidden; margin:0 auto 0 auto; width:100%; white-space:nowrap; }
+#trustelements img:hover { opacity: 0.85; filter: alpha(opacity=85); }
+#trustelements img { padding:0; margin-right:5px ; border:1px solid #666666; }
+
+//notes
+//1. replaced with on line 1. old: width: 950px; | new: 100%;
