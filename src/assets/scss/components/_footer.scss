@@ -5,18 +5,14 @@
 	float:left; 
 	clear:both; 
 	width:100%; 
-	color:#ffffff; 
-	--background-color:#004499; 
+	color:black; 
 	padding:20px 0 20px 0; 
-	border-top:1px solid #649Bf7;
-	background: #004499 url('../images/50_year_logo_200px.png') no-repeat right bottom; 
 	background-size: 200px 178px;
 }
-#footerarea a:link, #footerarea a:visited { color:#ffffff; }
-#footerarea a:hover { color:#ffff00 !important; }
+#footerarea a:link, #footerarea a:visited { color:black }
 #footerarea div.container { display:block; overflow:hidden; float:left; width:155px; min-height:130px; padding:0 0 0 35px; }
 #footerarea div.container ul { position:relative; padding:0 0 0 10px; margin:0;  }
-#footerarea div.container ul h2 { color:#ffffff;  margin:0 0 5px 0; }
+#footerarea div.container ul h2 { color:black;  margin:0 0 5px 0; }
 #footerarea div.container ul > li:first-child { padding-left:0; }
 #footerarea div.container ul li { position:relative; list-style-type:none; padding-left:3px; }
 #footerarea div.faq { display:block; overflow:hidden; float:left; clear:both; text-align:center; padding-top:10px; width:100%;   }
@@ -32,3 +28,11 @@
 	margin:10px;
 	font-size:130%;
 	}
+
+//notes
+//1. removed background: #004499 url('../images/50_year_logo_200px.png') no-repeat right bottom;  from #footerarea {}
+//2. removed --background-color:#004499; from #footerarea {}
+//3. replaced color: #ffffff; from #footerarea {} with color: black;
+//4. replaced color: #ffffff; from #footerarea a:link, #footerarea a:visited { } with color:black
+//5. removed #footerarea a:hover { color:#ffff00 !important; }
+//6. changed color:#ffffff; from #footerarea div.container ul h2 { color:black; }
