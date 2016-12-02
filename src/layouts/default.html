@@ -514,31 +514,18 @@
   </style>
 
 </head>
+
 <body>
+  <!--may not need this div
+  <div id="maindiv" class="row">-->
+  <!-- ADMINBAR -->
+  {{>header}}
+  <!-- <a href="https://dev4.ipdusa.com/basket.asp?"><img src="/skin/images/paymenttypes.jpg" alt="Payment types" style="margin:7px 10px 2px 10px; float:right;" /></a> -->
+  {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}} {{> body}}
 
-  <div id="maindiv">
-    <!-- ADMINBAR -->
-    {{>header}}
-    <!-- <a href="https://dev4.ipdusa.com/basket.asp?"><img src="/skin/images/paymenttypes.jpg" alt="Payment types" style="margin:7px 10px 2px 10px; float:right;" /></a> -->
-    {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}} {{> body}}
+  {{>footer}}
+  <!--</div>-->
 
-    <div id="trustelements">
-      <div class="wrappericons" align="center">
-        <a target="_blank" href="https://www.mcafeesecure.com/RatingVerify?ref=www.ipdusa.com"><img src="https://dev4.ipdusa.com/skin/images/mcafeesitesafe.jpg" alt="mcafee site safe" title="Click to view Mcafee security scan results"></a>
-        <a target="_blank" href="http://www.networksolutions.com/SSL-certificates/index.jsp"><img src="https://dev4.ipdusa.com/skin/images/netsol.jpg" alt="Network Solutions SSL" title="Information on the company providing our SSL certificates"></a>
-        <a target="_blank" href="http://www.facebook.com/ipdusa/"><img src="https://dev4.ipdusa.com/skin/images/facebook50px.png" alt="FaceBook" title="Follow us on FaceBook"></a>
-        <a target="_blank" href="http://www.youtube.com/user/IpdVolvo"><img src="https://dev4.ipdusa.com/skin/images/youtube50px.png" alt="YouTube" title="For more videos, visit our video channel on youTube"></a>
-        <a target="_blank" href="https://plus.google.com/116453085796992349062"><img src="https://dev4.ipdusa.com/skin/images/googleplus50px.png" alt="Google Plus" title="Find us on Google Plus"></a>
-        <a target="_blank" href="http://www.pinterest.com/ipdusa/"><img src="https://dev4.ipdusa.com/skin/images/pinterest50px.png" alt="Pinterest" title="Find us on Pinterest"></a>
-        <a target="_blank" href="http://instagram.com/ipdvolvo"><img src="https://dev4.ipdusa.com/skin/images/instagram50px.png" alt="Instagram" title="Follow us on Instagram"></a>
-        <a target="_blank" href="https://twitter.com/ipdVolvo"><img src="https://dev4.ipdusa.com/skin/images/twitter50px.png" alt="Twitter" title="Follow us on Twitter"></a>
-        <a target="_blank" href="http://www.yelp.com/biz/ipd-company-inc-portland"><img src="https://dev4.ipdusa.com/skin/images/yelp50px.png" alt="Yelp"></a>
-        <a target="_blank" href="http://4sq.com/bw6sbJ"><img src="https://dev4.ipdusa.com/skin/images/foursquare50px.png" alt="Foursquare"></a>
-      </div>
-    </div>
-    {{>footer}}
-  </div>
-  
   <!-- TRACKER -->
   <div id="fb-root" class=" fb_reset">
     <div style="position: absolute; top: -10000px; height: 0px; width: 0px;">

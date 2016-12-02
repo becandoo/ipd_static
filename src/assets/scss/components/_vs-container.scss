@@ -1,0 +1,36 @@
+/*vehicle selector*/
+#vehicleselector { background: #1e232c; overflow:hidden; border-top:8px solid #457B9D; padding:5px; left:16px; /*top;0;*/  z-index:10;}
+
+.caption {
+    color: white;
+}
+
+#vehicleselector {
+    select{
+        margin: 0 0 0.6rem;
+    }
+    .button {
+        margin: 0;
+        &.warning {
+            color: black;
+            font-weight: normal;
+                font-size: 95%;
+         }
+    }
+}
+
+#vs-narrative {
+    p {
+        font-size: 100%;
+    }
+}
+
+//notes
+//1. removed position: absolute; border-radius:3px; width:192px; from #vehicleselector {}
+//2. removed position: absolute; width:658px; right:30px; from #vs-narrative {}
+//3. removed  margin-bottom:20px; height:300px; from #vs-container {}
+//4. removed  #vehicleselector select.current { background-color:#ffff99; }
+//5. removed the following :
+    //#vehicleselector div.buttons { margin-top:5px; }
+    //#vehicleselector div.buttons button { margin:0; }
+    //#vehicleselector div.caption, #vehicleselector div.buttons { text-align:center; }

@@ -612,8 +612,6 @@ div.filterencouragement { border:1px solid #909090; float:left; display:block; o
 div.filterencouragement span { display:block; overflow:hidden; padding-top:3px; float:left; font-size:14px; color:#000000; }
 div.filterencouragement img { float:left; border:0; padding:0; margin:0 10px 0 0; height: 20px; }
 
-
-
 div.products { position:relative; display:block; clear:both; overflow:hidden; padding-bottom:10px; }
 div.products p { clear:both; }
 div.products img.more { border:1px solid transparent; float:right; margin:5px; height:225px; width:50px; }
@@ -709,9 +707,6 @@ div.products div.centerbar div.productperpage a:hover { background-color:#ffff00
 div.products div.centerbar div.sortby { display:block; overflow:hidden; float:right; white-space:nowrap; }
 div.products div.centerbar div.sortby label { white-space:nowrap; padding:1px 5px 1px 1px; }
 div.products div.centerbar div.sortby .select { font-size:10px; background-color:#ffffff; }
-
-
-
 
 #product p { margin: 0 0 12px 0px; }
 
@@ -1552,8 +1547,6 @@ div.searchresults .zbtn-small { text-transform:uppercase; font-size:10px; margin
 #OldBrowserWarning { display:block; clear:both; overflow:hidden; background-color:#ffffcc; padding:20px;}
 #OldBrowserWarning > p{ padding:10px; margin:0; text-align:center; font-size:16px; font-weight:bold; color:#FF0000; overflow:hidden;}
 
-
-
 div.homepage { overflow:hidden; padding:10px 15px; }
 
 div.homepage div.section { position:relative; clear:both; overflow:hidden; margin-bottom:10px; }
@@ -1574,10 +1567,6 @@ div.homepage div.products div.categories li {margin:0 0 5px 0; width: 212px;}
 div.homepage div.blog img { width:200px; height:150px; float:left; margin-bottom:20px; }
 
 div.homepage h2 a { color: #00439a; }
-
-
-
-
 
 .jssora07l, .jssora07r {
 	display: block;
@@ -1606,36 +1595,6 @@ div.homepage h2 a { color: #00439a; }
 .jssort01 .p:hover .c { border-color: #0000ff; }
 .jssort01 .p.pdn .c { width: 96px; height: 71px; border: #00ff00 2px solid; }
 			
-	
-
-
-#vehicleselector { position:absolute; background-color: #004499; overflow:hidden; border-radius:3px; padding:10px; left:16px; /*top;0;*/ width:192px; z-index:10;}
-
-#vehicleselector div.caption,
-#vehicleselector div.buttons { text-align:center; }
-
-#vehicleselector div.caption { color:#ffffff; font-weight:bold; margin-bottom:5px; }
-
-#vehicleselector div.buttons { margin-top:5px; }
-#vehicleselector div.buttons button { margin:0; }
-
-#vehicleselector select:first-child { margin-top:0; }
-#vehicleselector select:last-child  { margin-bottom:0; }
-
-#vehicleselector select { margin:5px 0;  width:100%; border-radius:3px; font-size:115%; background-color:#ffffff; padding:3px 0; }
-#vehicleselector select.current { background-color:#ffff99; }
-#vehicleselector select:disabled { background-color:#cccccc; }
-
-#vs-container { position:relative; clear:both; overflow:hidden; margin-bottom:20px; height:300px; }
-#vs-help { position:absolute; display:inline-block; top:0; right:15px; overflow:hidden; width:375px;  }
-
-#vs-help div.overlay { position:absolute; left:0; top:0; background-color:#cccccc; -moz-opacity:0.4; opacity:0.40; filter:alpha(opacity=40); width:100%; height:100%; z-index:100;  }
-#vs-help div.overlay > span { position:absolute; top:50%; left:50%; width:75px; height:75px; margin:-37px 0 0 -37px; background:url('../images/loading.gif') no-repeat center center;}
-
-
-#vs-narrative { position:absolute; display:inline-block; top:0; right:30px; overflow:hidden; width:658px; }
-#vs-narrative  p { text-align:justify; }
-
 div.promotions { overflow:hidden; margin-bottom:20px; }
 
 div.promotions > div { overflow:hidden; width:90%; padding:0; margin:30px auto; }
