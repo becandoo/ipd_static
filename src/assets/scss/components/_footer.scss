@@ -19,9 +19,25 @@
 	float:left; 
 	clear:both; 
 	width:100%; 
-	color:black; 
+	color:white; 
 	padding:20px 0 20px 0; 
 	background-size: 200px 178px;
+	    background-color: #1e232c;
+		h4 {
+		  span {
+			  border-bottom: 2px solid #00A0C6;
+		  }
+		}
+		a {
+			color: White;
+		}
+		.menu {
+			li {
+				a{
+					color: white;
+				}
+			}
+		}
 }
 
 #footerarea div.container { display:block; overflow:hidden; float:left; width:155px; min-height:130px; padding:0 0 0 35px; }

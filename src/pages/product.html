@@ -1,0 +1,31 @@
+{{>breadcrumbs}}
+{{>product-header}}
+<br>
+{{>jquery-tabs}}
+
+
+<script type="text/javascript"><!--
+var vehiclesloaded=false;var reviewsloaded=false;var shippingloaded=false;var faqloaded=false;
+$(document).ready(function(){
+$('#producttabs').tabs();
+$('#producttabs').tabs({show:function(event,ui){tabselected(ui.panel.id);}});
+$('a#addtocartbutton').fancybox({'width':650, 'height':500, 'autoScale':false,'transitionIn':'none','transitionOut':'none','type':'iframe'});
+$('a#feedbacklink').fancybox({'width':500, 'height':400, 'autoScale':false,'transitionIn':'none','transitionOut':'none','type':'iframe'});
+$('a#addtowatchlist').fancybox({'width':640, 'height':500, 'autoScale':false,'transitionIn':'none','transitionOut':'none','type':'iframe'});
+$('div.corecharge').click(function(){ $(this).find('span').slideDown() });
+$('a.uploadimagelink').fancybox({'width':500, 'height':400, 'autoScale':false,'transitionIn':'none','transitionOut':'none','type':'iframe'});
+hideelement('addtocartloading');
+$('#addtocartbutton').fadeIn();
+fInitProductImageCarousel();
+});
+function tabselected(id){if(id=='tbvehicles'){ajaxdisplayvehicles();}if(id=='tbreviews'){ajaxdisplayreviews();}if(id=='tbshipping'){ajaxdisplayshipping();}if(id=='tbfaq'){ajaxdisplayfaq();}}
+function itemaddedtowatchlist(){};
+function itemaddedtocart(){fixaddtocartbutton();ajaxupdatecartdisplay();}
+function fixaddtocartbutton(){$('#addtocartbutton').hide();$('#alreadyincartbutton').show();}
+function ajaxdisplayfaq() {if (!faqloaded) {var xPost='s='+sessioncode+'&P_ID=8738';$.post('/ajaxproductfaq.asp', xPost).fail(function(a,b,c){$('#adhocshipping').html('<p class="errors">Server communication failed</p>');});}};
+function ajaxdisplayvehicles() {if (!vehiclesloaded) {var xPost='s='+sessioncode+'&P_ID=8738';$.post('/ajaxgetvehicleapplications.asp', xPost).fail(function(a,b,c){$('#adhocshipping').html('<p class="errors">Server communication failed</p>');});}};
+function ajaxdisplayreviews() {if (!reviewsloaded) {var xPost='s='+sessioncode+'&P_ID=8738';$.post('/ajaxproductreviews.asp', xPost).fail(function(a,b,c){$('#adhocshipping').html('<p class="errors">Server communication failed</p>');});}};
+function ajaxupdatecartdisplay() {var xPost='s='+sessioncode;$.post('/ajaxdisplaybasket.asp', xPost)}
+function ajaxdisplayshipping(){if(!shippingloaded){var xPost='s='+sessioncode+'&P_ID=8738';$.post('/ajaxproductshipping.asp', xPost).fail(function(a,b,c){$('#adhocshipping').html('<p class="errors">Server communication failed</p>');});}};
+function getshippingquote() {var pc=$('#SHIP_POSTAL_CODE').val();if(!pc){pc=''};var cc=$('#SHIP_COUNTRY_ID').val();if(!cc){cc=''};var xPost='SHIP_COUNTRY_ID='+cc+'&SHIP_POSTAL_CODE='+pc+'&s='+sessioncode+'&P_ID=8738';$('#adhocshipping').html('<p class="wait4ajax"><img src="/skin/images/loading.gif"/></p>');$.post('/ajaxproductshipping.asp', xPost).fail(function(a,b,c){console.log(a);console.log(b);console.log(c);$('#adhocshipping').html('<p class="errors">Server communication failed</p>');});};
+//--></script>

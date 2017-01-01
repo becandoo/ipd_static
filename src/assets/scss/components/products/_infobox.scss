@@ -1,0 +1,13 @@
+
+/*infobox*/
+div.infobox { float:left; clear:both; display:block; overflow:hidden; margin:10px 0 10px 0; padding:0; border:0; font-size:16px; }
+div.infobox div.info-content { display:block; overflow:hidden; min-height:45px; padding:5px 5px 5px 60px; background-repeat: no-repeat; }
+div.infobox div.info { border-color:#00529B; color:#00529B; background-color:#BDE5F8; background-image:url('/skin/images/info.png'); }
+div.infobox div.info-success {  background-color:#ccffcc; background-image:url('https://dev4.ipdusa.com/skin/images/success.png'); }
+div.infobox div.info-warning {   background-image:url('https://dev4.ipdusa.com/skin/images/warning.png'); }
+div.infobox div.info-error  {  color:#cc0000; background-color:#ffcccc; background-image:url('https://dev4.ipdusa.com/skin/images/error.png'); }
+div.infobox div.info-content div.vehicle { clear:left; }
+div.infobox div.info-content span { float:left; display:block; overflow:hidden; margin-right:7px; font-weight:bold;  }
+div.infobox div.info-content span.caption { font-weight:normal; padding-bottom:5px; font-size:120%;}
+div.infobox div.info-content div.buttons { clear:left; padding:5px; }
+

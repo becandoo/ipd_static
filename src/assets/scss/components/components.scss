@@ -13,6 +13,9 @@
 
 ///* Large only */
 //@media screen and (min-width: 64em) and (max-width: 74.9375em) {}
+/*mixins*/
+@import 'variables.scss';
+@import 'mixins.scss';
 
 /*global*/
 @import 'global.scss';
@@ -22,6 +25,7 @@
 @import 'header/header.scss';
 @import 'header/header4.scss';
 @import 'header/menu.scss';
+@import 'header/search.scss';
 
 /*trust elements*/
 @import 'trustedelements.scss';
@@ -35,8 +39,27 @@
 /*vehicle selector*/
 @import 'vs-container.scss';
 
+/*shop-by-car*/
+@import 'shop-by-vehicle.scss';
+
+/*categories*/
+@import 'categories.scss';
+
+/*news*/
+@import 'news.scss';
+
 /*products*/
-//@import 'products.scss';
+@import 'products.scss';
 
 /*homepage*/
-//@import 'homepage.scss';
+@import 'homepage.scss';
+
+/*shopping*/
+@import 'shopping/narrow-results.scss';
+@import 'shopping/shopping.scss';
+
+/*products*/
+@import 'products/product-header.scss';
+@import 'products/infobox.scss';
+@import 'products/product-tabs.scss';
+

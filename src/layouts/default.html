@@ -522,8 +522,9 @@
   {{>header}}
   <!-- <a href="https://dev4.ipdusa.com/basket.asp?"><img src="/skin/images/paymenttypes.jpg" alt="Payment types" style="margin:7px 10px 2px 10px; float:right;" /></a> -->
   {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}} {{> body}}
-
+  <!--new footer-->
   {{>footer}}
+  <!--/new footer-->
   <!--</div>-->
 
   <!-- TRACKER -->
@@ -561,7 +562,26 @@
       <div id="fancybox-title"></div><a href="javascript:;" id="fancybox-left"><span class="fancy-ico" id="fancybox-left-ico"></span></a><a href="javascript:;"
         id="fancybox-right"><span class="fancy-ico" id="fancybox-right-ico"></span></a></div>
   </div><script aria-hidden="true" type="application/x-lastpass" id="hiddenlpsubmitdiv" style="display: none;"></script><script>try{(function() { for(var lastpass_iter=0; lastpass_iter < document.forms.length; lastpass_iter++){ var lastpass_f = document.forms[lastpass_iter]; if(typeof(lastpass_f.lpsubmitorig2)=="undefined"){ lastpass_f.lpsubmitorig2 = lastpass_f.submit; if (typeof(lastpass_f.lpsubmitorig2)=='object'){ continue;}lastpass_f.submit = function(){ var form=this; var customEvent = document.createEvent("Event"); customEvent.initEvent("lpCustomEvent", true, true); var d = document.getElementById("hiddenlpsubmitdiv"); if (d) {for(var i = 0; i < document.forms.length; i++){ if(document.forms[i]==form){ if (typeof(d.innerText) != 'undefined') { d.innerText=i.toString(); } else { d.textContent=i.toString(); } } } d.dispatchEvent(customEvent); }form.lpsubmitorig2(); } } }})()}catch(e){}</script>
-  <script src="{{root}}assets/js/app.js"></script>
+    <script src="{{root}}assets/js/app.js"></script>
+
+        <!--custom javascript functionality-->
+        <script type="text/javascript">
+            $(document).ready(function () {
+              $('#search-row').slideUp();
+
+              $('.search').click(function(){
+                //if ($('#search-row').hasClass("hide")) {
+                  //$('#search-row').slideDown();
+                  //$('#search-row').removeClass("hide");
+                //} else {
+                  //$('#search-row').slideUp();
+                  //$('#search-row').addClass("hide");
+                //}
+              $('#search-row').slideToggle();
+    
+              });
+            });
+        </script>
 </body>
 
 </html>

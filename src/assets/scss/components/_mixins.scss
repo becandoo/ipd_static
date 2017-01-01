@@ -1,0 +1,16 @@
+//ui colors
+@mixin ui-colors($map){
+@each $theme, $color in $map {
+    &.#{$theme}{
+        color: $color;
+        }
+    }
+}
+
+@mixin ui-bg-colors($map){
+@each $theme, $color in $map {
+    &.#{$theme}{
+        background-color: $color;
+        }
+    }
+}

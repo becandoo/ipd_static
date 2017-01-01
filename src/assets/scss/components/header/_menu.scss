@@ -29,12 +29,16 @@ div.menu li.toplevel > a,
 div.menu li.toplevel > a:visited { display:block; padding: 1px 10px;  z-index:1000; }
 
 div.menu li.toplevel:hover > a,
-div.menu li.toplevel > a:hover { color: #ffff00; background:#346bc7; }
+.menu li.toplevel > a:hover { color: #ffff00; background:#346bc7; }
 
 .menu {
     li {
-        a{
-            font-size: 112%;
+        &.toplevel{
+            a{
+            font-size: 110%;
+            text-transform: uppercase;
+                padding: 0.7rem 1rem;
+            }
         }
     }
 }
