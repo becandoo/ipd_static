@@ -1,8 +1,7 @@
 div.products div.categories { display:block; overflow:hidden; clear:both; margin-bottom:10px;  }
 div.products div.categories ul { padding:0; margin:0; }
 div.products div.categories ul li { display:block; overflow:hidden; list-style-type:none; }
-div.products div.categories ul li:hover { background-color:#dddddd; } 
-div.products div.categories ul li a { display:block; width:100%; height:100%; }
+div.products div.categories ul li a { display:block; width:100%; }
 
 //notes
 //1. div.products div.categories p { margin:0 0 10px 0; }
@@ -12,8 +11,8 @@ div.products div.categories ul li a { display:block; width:100%; height:100%; }
     .menu {
         li {
             a{
-                padding: 0.4rem 0.4rem;
-                font-size: 110%;
+                padding: 0.5rem 0.3rem;
+                color: black;
             }
         }
     }
@@ -22,25 +21,27 @@ div.products div.categories ul li a { display:block; width:100%; height:100%; }
 /* Small only */
 @media screen and (max-width: 39.9375em) {
     .categories {
+        h4{
+            text-align: center;
+        }
         ul {
             li{
                 font-size: 115%;
-            text-align: center;
-            width: 100%;   
-            border: 1px solid white;   
-            padding: 1rem 1.2rem;
-            background: #1e232c;     
-                a{
-                                         
-                color: white;
                 text-align: center;
+                width: 100%;   
+                border: 1px solid white;   
+                padding: 1rem 1.2rem;
+                background: #1e232c;     
+                a{                                         
+                    color: white !important;
+                    text-align: center;
                 
                 }
             }
         }
     }
     div.blog {
-    margin-bottom: 20px;
+        margin-bottom: 20px;
         img {
         display: block;
         margin: 0 auto;
@@ -52,7 +53,25 @@ div.products div.categories ul li a { display:block; width:100%; height:100%; }
 @media screen and (min-width: 40em) {}
 
 /* Medium only */
-@media screen and (min-width: 40em) and (max-width: 63.9375em) {}
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+    .categories {
+        ul {
+            li{
+                font-size: 115%;
+                text-align: center;
+                width: 100%;   
+                border: 1px solid white;   
+                padding: 1rem 1.2rem;
+                background: #1e232c;     
+                a{                                         
+                    color: white !important;
+                    text-align: center;
+                
+                }
+            }
+        }
+    }
+}
 
 /* Large and up */
 @media screen and (min-width: 64em) {}

@@ -1,0 +1,15 @@
+#productfaq { 
+    display:block; 
+    margin: 0 0 20px 0; 
+    clear:both; 
+    overflow:hidden;
+
+    ul {
+        list-style: none;
+        font-weight: bold;
+    }
+    }
+#productfaq li { margin-top: 5px; }
+#productfaq li span {  overflow:hidden; clear:both; margin:10px 0 10px 10px; display:none; visibility:hidden; }
+#productfaq img { margin:5px; padding:0; border:0; }
+#productfaq li span p { margin:5px 0 8px 0; }

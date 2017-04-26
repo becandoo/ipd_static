@@ -1,25 +1,19 @@
 /*product header*/
-#productheader a { display:block; overflow:hidden; float:left; margin:1px 5px 1px 0; }
 #productheader img { border:0; }
-#productheader img.prodshot { position:relative; float:left; border:0; width:400px; height:300px; cursor:pointer;}
-#productheader a.btn, #productheader a.btn:visited { background-color:#3399ff; color:#ffffff; border: 1px solid #999999; margin:1px 5px 1px 1px; overflow:visible; padding:1px 4px; cursor:pointer; }
-#productheader a.btn:hover { background-color:#0000ff; }
+#productheader img.prodshot { position:relative; float:left; border:0; width:400px; height:280px; cursor:pointer;}
 #productheader div.patcd { display:block; overflow:hidden; float:right; vertical-align:middle; text-align:right; white-space:nowrap; }
 #productheader div.patcd span { float:right; margin:0 10px 0 0; display:block; overflow:hidden; }
-#productheader div.patcd span.addtocartcell { margin:0; }
+#productheader div.patcd div.addtocartcell { margin:0; }
 #productheader div.patcd span.addtocartcell a.cartbutton { margin:0; }
-#productheader div.pd1 { position:relative; float:left; display:block; overflow:visible; width:540px; padding:0; margin:0 0 5px 0; }
-#productheader div.pd1 span { float:left; margin:0 10px 0 0; display:block; overflow:hidden; font-size:18px; text-transform:uppercase; white-space:nowrap; }
-#productheader div.pd1 span.addtocartcell { margin:0; float:right; }
-#productheader div.pd1 span.addtocartcell a.cartbutton { float:right; }
+#productheader div.pd1 { position:relative; display:block; overflow:visible; padding:0; margin:0 0 5px 0; }
+#productheader div.pd1 span { overflow:hidden; font-size:16px; white-space:nowrap; }
+#productheader div.pd1 div.addtocartcell { margin:0; float:right; }
+#productheader div.pd1 div.addtocartcell a.cartbutton { float:right; }
 #productheader div.pd1 span.unitofmeasure { color: #666666; }
 #productheader div.pd1 span.unavailable { color: #cc9999; margin:0; }
-#productheader div.pd1 span.saleprice { font-weight: bold; color: #FF0000; }
 #productheader div.pd1 span.normalprice { font-weight: bold; }
 #productheader div.pd1 span.normalpricesale { color: #666666; font-weight: normal; text-decoration: line-through; }
 #productheader div.pd1 span.specialpricecaption { clear:left; color: #cc00cc;}
-#productheader div.pd1 span.specialprice { font-weight: bold; color: #cc00cc;}
-
 
 /* added 2016-11-18 by KRR */
 /* adding new core charge display functionality */
@@ -59,7 +53,6 @@
 #productheader  span.unavailable { float:left; padding:10px; font-weight:bold; color:red; font-size:120%; }
 #productheader div.pd2 table {  border: 0;  }
 #productheader div.pd2 table tbody{  border: 0;  }
-#productheader div.pd2 table td {  text-transform:uppercase;  }
 #productheader div.pd2 table td.attributename { white-space:nowrap; } 
 #productheader div.pd2 table td.attributevalue { color:#000000; background-color: #ffffff; width:100%; padding:1px 0 1px 3px; }
 #productheader div.pd2 table td.productname { font-size:12px; }
@@ -80,20 +73,124 @@
 
 #productheader div.patcd span.availability { clear:both; float:right; padding:2px 5px 2px 2px; margin:3px 0 0 0; }
 #productheader div.patcd span.availability a { margin:0; }
-#productheader div.patcd span.unitofmeasure { color: #707090; text-transform:uppercase; font-size:16px; }
+#productheader div.patcd span.unitofmeasure { color: #707090; font-size:16px; }
 #productheader div.patcd span.saleprice { font-weight: bold; color: #FF0000; font-size:16px; }
 #productheader div.patcd span.normalprice{ font-weight: bold; font-size:16px; }
 #productheader div.patcd span.normalpricesale { font-weight: normal; text-decoration: line-through; white-space:nowrap; font-size:16px; }
 
+#productheader {
+    a {
+        &.button {
+            margin-right: 3px;
+        }
+    }
+    #cart-msg {
+        font-size: 0.9rem;
+    }
+}
+.product-attributes {
+    font-size: 14px;
+}
 
+.productavailability {
+    a {
+        float: none !important;
+        display: inline-block !important;
+        overflow: initial !important;
+        margin: 0 !important;
+    }
+}
+
+.pd4 {
+    margin: 5px;
+    span {
+        display: inline;
+    }
+    p {
+        display: inline;
+    }
+    a {
+        float: none !important;
+        display: inline !important;
+    }
+}
+
+.pd2 {
+    span {
+        margin: 10px 10px 0 0;
+    }
+}
+
+.cartbutton {
+  display: inline-block;
+  text-transform: uppercase;
+  color: #ffffff;
+  border-radius: 50px;
+  padding: .9rem;
+  font-weight: 700;
+  letter-spacing: .1em;
+
+}
+
+.cartbutton:active {
+  -webkit-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.pricecell {
+    span {
+        margin:0 10px 0 0; 
+    }
+}
+
+.add_qty {
+    display:inline-block;
+
+    input {
+        width: 60px;
+        margin-right: 5px;
+    }
+}
 
 /* Small only */
 @media screen and (max-width: 39.9375em) {
-        #productheader a {
-        display: block;
-        overflow: hidden;
+        #productheader {
+
+            a {
+                display: block;
+                overflow: hidden;
+                float: none;
+                margin: 4px 5px 1px 0;
+            }
+        } 
+    #productheader div.pd1 div.addtocartcell { margin:10px 0 10px 0; float:right; width: 100%; }
+        #productheader div.pd1 div.addtocartcell a.cartbutton {
         float: none;
-        margin: 4px 5px 1px 0;
+    }
+    .pd1 {
+        text-align: center;
+    }
+    #productheader div.pd1 span {
+        float: none;
+        margin: 10px 0px 0 0;
+    }
+       div.pricecell {
+        width: 100%;
+        display: inline-block;
+        text-align: center;
+        .normalpricesale{
+            display:block;
+        }
+        .specialpricespan {
+            display: block;
+        }        
+    }
+    #success-message {
+        text-align: center;
+    }
+    .productavailability {
+        margin-left: 10px !important;
     }
 }
 

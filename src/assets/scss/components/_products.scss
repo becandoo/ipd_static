@@ -1,5 +1,5 @@
 
-div.products { position:relative; display:block; clear:both; overflow:hidden; padding-bottom:10px; }
+div.products { position:relative; display:block; clear:both; overflow:hidden; padding-bottom:10px; margin-top: 20px;}
 div.products p { clear:both; }
 div.products img.more { border:1px solid transparent; float:right; margin:5px; height:225px; width:50px; }
 div.products img.more:hover { border:1px solid #999999; float:right; height:225px; width:50px; }
@@ -8,25 +8,18 @@ div.products .errors { display:block; width:635px; float:left; color:red; backgr
 
 div.products .filterresults { display:block; float:right; overflow:hidden; width:710px; padding:0; margin:0; }
 
-div.products div.searchresults div.resultsbox { display:block; overflow:hidden; float:left; width:100%; }
-div.products div.searchresults div.resultsbox h2 { padding:5px; margin:10px 5px 5px 5px; background-color:#EEEEEE; clear:both;}
+div.products div.searchresults div.resultsbox h4 { padding:5px; margin:10px 5px 5px 5px; background-color:#EEEEEE; clear:both;}
 
-div.products div.filterdetails { border:1px solid #909090; float:left; display:block; overflow:hidden; width: 645px; padding:5px; margin:2px 2px 6px 5px; background-color:#eeeeee; }
-div.products div.filterdetails td { padding:0 0 2px 0; font-size:12px; text-align:left; vertical-align:middle; }
-div.products div.filterdetails p { margin: 0 0 5px 0; }
-div.products div.filterdetails h2 { margin: 0 0 5px 0; }
-div.products div.filterdetails a.zbtn { margin-left:0; margin-right:5px; }
 
 div.products div.pad { padding:5px;  }
 div.products div.box { position:relative; float:left;  background-color:#ffffff; display:block; text-align:center; overflow:hidden; }
-div.products div.box:hover { border: 1px solid #999999; color: #000000; background-color:#ffffff;}
-div.products div.box a { color:#000000; }
+div.products div.box a { color:$black; }
 div.products div.box a.onsale { color:#006600; }
 div.products div.box a.exclusive { color:#000066; }
 div.products div.box a.closeout { color:#660000; }
-div.products div.box a:hover { color: #000000; }
+div.products div.box a:hover { color: $black; }
 div.products div.box img { position:relative; display:block; margin: 0 auto; border:0; padding:0; }
-div.products div.box span.name { display:block; height:46px; clear:both; margin:0 5px 0px 5px; font-size:12px; overflow:hidden; }
+div.products div.box span.name { display:block; clear:both; margin:0 5px 0px 5px; font-size:12px; overflow:hidden; }
 div.products div.box span.price { display:block; clear:both; margin:0; font-size:14px; }
 div.products div.box span.modelyears { display:block; overflow:hidden; clear:both; margin:0 5px 0px 5px; font-size:14px; }
 div.products div.box span.modelmake  { display:block; overflow:hidden; clear:both; margin:0 5px 0px 5px; font-size:16px; font-weight:bold; }
@@ -38,13 +31,11 @@ div.products div.filterbar { position:relative; display:block; overflow:hidden; 
 div.products div.filterbar span { position:relative; display:block; overflow:hidden; float:left; white-space:nowrap; margin-right:10px; height:24px; vertical-align:middle; }
 div.products div.filterbar span:first-child { font-size: 14px; color:#00439A; font-weight:bold; padding-top:3px; }
 div.products div.filterbar input[type="text"], div.products div.filterbar select { width:140px; font-size:12px; }
-div.products div.filterbar input[type="submit"] { width:30px; font-size:10px; background-color:#006633; color:#ffffff; margin-left:5px; }
+div.products div.filterbar input[type="submit"] { width:30px; font-size:10px; background-color:#006633; color:$white; margin-left:5px; }
 
-div.products div.box2 { position:relative; display:block; overflow:hidden; background-color:#ffffff; width:100%; height:275px; padding:0; margin:5px; border:1px solid #cccccc;}
-div.products div.box2:hover { border: 1px solid #000066; }
-div.products div.box2 a { color:#000000; }
-div.products div.box2 a:hover { color: #000066; }
-div.products div.box2 img { display:block; border:0; margin:0 auto; padding:0; left:5px; top:5px; width:200px; height:150px; }
+div.products div.box2 { position:relative; display:block; overflow:hidden; background-color:#ffffff; margin-bottom: 10px; width:100%; height:275px; padding:0; border:1px solid #cccccc;}
+div.products div.box2 a { color:$black; }
+div.products div.box2 img { display:block; border:0; margin:0 auto; }
 div.products div.box2 span { display:block; overflow:hidden; text-align:center; left:5px; top:160px; }
 div.products div.box2 span.saletag { display:block;  white-space:nowrap; overflow:hidden; text-align:center; padding:0;  font-weight:bold; font-size:14px;  left:0; width:100%; top:0; color:#ff0000; opacity:.8;  }
 div.products div.box2 span.exclusive { display:block;  overflow:hidden; padding:0; left:5px; width:80px; top:135px; height:21px; background: url("https://dev4.ipdusa.com/skin/images/exclusivetag.gif") no-repeat scroll 0 0 transparent; }
@@ -54,8 +45,8 @@ div.products div.centerbar { display:block; overflow:hidden; clear:both; padding
 div.products div.centerbar div.productperpage { display:block; overflow:hidden; float:left; }
 div.products div.centerbar div.productperpage span { display:block; overflow:hidden; float:left; white-space:nowrap; padding:1px; margin-right:2px; }
 div.products div.centerbar div.productperpage a { display:block; overflow:hidden; float:left; margin-right:2px; white-space:nowrap; padding:1px; color:#999999; border:1px solid #999999; background-color:#ffffff; }
-div.products div.centerbar div.productperpage span.current { display:block; overflow:hidden; float:left; white-space:nowrap; padding:1px; border:1px solid #000000;}
-div.products div.centerbar div.productperpage a:hover { background-color:#ffff00; color:#000000; border:1px solid #000000;}
+div.products div.centerbar div.productperpage span.current { display:block; overflow:hidden; float:left; white-space:nowrap; padding:1px; border:1px solid $black;}
+div.products div.centerbar div.productperpage a:hover { background-color:#ffff00; color:$black; border:1px solid $black;}
 div.products div.centerbar div.sortby { display:block; overflow:hidden; float:right; white-space:nowrap; }
 div.products div.centerbar div.sortby label { white-space:nowrap; padding:1px 5px 1px 1px; }
 div.products div.centerbar div.sortby .select { font-size:10px; background-color:#ffffff; }
@@ -78,11 +69,6 @@ span.price {
     }
 }
 
-.products {
-    .columns {
-        padding-bottom: 10px;
-    }
-}
 /* Small only */
 @media screen and (max-width: 39.9375em) {
 div.products div.box2 { margin-bottom: 20px;}

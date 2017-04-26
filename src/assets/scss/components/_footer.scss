@@ -19,22 +19,24 @@
 	float:left; 
 	clear:both; 
 	width:100%; 
-	color:white; 
+	color:$medium-gray; 
 	padding:20px 0 20px 0; 
 	background-size: 200px 178px;
-	    background-color: #1e232c;
+	background-color: #14171d;
+	margin-top: 10px;
 		h4 {
+			color:white; 
 		  span {
 			  border-bottom: 2px solid #00A0C6;
 		  }
 		}
 		a {
-			color: White;
+			color: $medium-gray;
 		}
 		.menu {
 			li {
 				a{
-					color: white;
+					color: $medium-gray;
 				}
 			}
 		}

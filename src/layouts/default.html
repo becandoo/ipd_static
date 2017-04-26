@@ -8,6 +8,8 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>IPDUSA</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700|Open+Sans:300,400,600,700,800" rel="stylesheet">
   <link rel="stylesheet" href="{{root}}assets/css/app.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -22,10 +24,9 @@
   <meta name="description" content="The Volvo Parts, Accessories and Performance Specialists Since 1963">
   <meta name="keywords" content="ipd Volvo auto parts OE OES Genuine accessories performance maintenance restoration replacement ecu upgrades aftermarket chips 122 544 140 240 740 760 780 S60 850 S60 S70 V70 S80 V40 S40 V50 C70 C30 XC90 XC60">
   <meta property="fb:app_id" content="375943435783823">
-
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" media="all">
   <!-- fb:image -->
   <title>The Volvo Parts, Accessories and Performance Specialists Since 1963</title>
-  <link rel="Stylesheet" type="text/css" href="https://dev4.ipdusa.com/skin/styles/print.css" media="print">
   <link rel="Stylesheet" type="text/css" href="https://dev4.ipdusa.com/includes/adminbar.css" media="all">
   <script id="facebook-jssdk" src="//connect.facebook.net/en_US/all.js#xfbml=1&amp;appid=375943435783823"></script>
   <script type="text/javascript" charset="utf-8" src="https://dev4.ipdusa.com/includes/ajax/ajax.js"></script>
@@ -567,7 +568,58 @@
         <!--custom javascript functionality-->
         <script type="text/javascript">
             $(document).ready(function () {
-              $('#search-row').slideUp();
+            // change any missed header tags
+            //$('td:reallyEmpty').append('-');
+
+              //call replaceTags function to replace any missed header tags
+                //replaceTags('h4', 'h5');
+                //replaceTags('h3', 'h4');
+                //replaceTags('h2', 'h3');
+                //replaceTags('h1', 'h2');
+
+                //make tables responsive if they are wrapped in <div class="table-responsive-vertical"
+                //if ($('div').hasClass('table-responsive-vertical'))                     
+                //{
+                //$('table').attr('id','table');
+                //$('table').attr('class','table table-hover table-mc-light-blue');
+                //};
+
+                //$( ".table" ).each( function( index, tableID ) {
+                    //$( tableID ).find( "thead tr th" ).each( function( index ) {
+                        //index += 1;
+                        //$( tableID ).find( "tbody tr td:nth-child(" + index + ")" ).attr( "data-title", $(this).text() );
+                    //});
+                //});
+
+
+                $('[class*=zbtn]').each(function (i, el) {
+                $(this).removeClass('zbtn');
+                $(this).addClass('button');
+                if ($(this).hasClass('zbtn-info')) {
+                    $(this).removeClass('zbtn-info');
+                    $(this).addClass('primary');
+                    console.log(this);
+                }
+                else if ($(this).hasClass('zbtn-success')) {
+                    $(this).removeClass('zbtn-success');
+                    $(this).addClass('success');
+                    console.log(this);
+                }
+                else if ($(this).hasClass('zbtn-primary')) {
+                    $(this).removeClass('zbtn-primary');
+                    $(this).addClass('primary');
+                    console.log(this);
+                }
+                else if ($(this).hasClass('zbtn-danger')) {
+                    $(this).removeClass('zbtn-danger');
+                    $(this).addClass('alert');
+                    console.log(this);
+                }
+                $('[class*=zbtn-small]').each(function (i, el) {
+                    $(this).removeClass('zbtn-small');             
+                });
+            });
+     
 
               $('.search').click(function(){
                 //if ($('#search-row').hasClass("hide")) {
@@ -580,7 +632,6 @@
               $('#search-row').slideToggle();
     
               });
-            });
         </script>
 </body>
 

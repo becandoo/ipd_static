@@ -1,3 +1,15 @@
+/* Medium and up */
+@media screen and (min-width: 40em) {}
+
+/* Medium only */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {}
+
+/* Large and up */
+@media screen and (min-width: 64em) {}
+
+/* Large only */
+@media screen and (min-width: 64em) and (max-width: 74.9375em) {}
+
 //google fonts
 @import url('https://fonts.googleapis.com/css?family=Oxygen');
 
@@ -13,20 +25,56 @@
 }
 
 body { 
-    font-size: 10pt;
+    font-size: 11pt;
 	margin:0;
 	color: #444; 
-    font-family: "Open Sans", Helvetica, Roboto, Arial, sans-serif
+    font-family: 'Noto Sans', sans-serif;
 }
 
-  
+hr {
+    margin: .8rem auto;
+}
+
+a {
+    color:#124E78;
+}
+N206STRTZCQPFOFA
+#backToTop {    
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    color: #000000; 
+    opacity:0.8;
+    padding: 7px 12px;
+    display: none;
+    overflow:hidden;
+    cursor:pointer;
+    color:#444;
+    border-radius: 60px;
+    border: 2px solid #2a70a6;
+}
+
+#backToTop * {
+    display:inline-block;
+    overflow:hidden;
+}
+
+#backToTop > span {
+    font-size: 16px;    
+}
+#backToTop > span:before {
+    content:'\f077';
+    font-family:FontAwesome;
+    font-size: 20px;
+}
+
+#backToTop:hover {    
+    opacity:1;
+    color: #444;
+}
+
+
 div.noscript { position:relative; padding:5px; font-size:160%; font-weight:bold; text-align:center; background-color:#ffff00; color:#ff0000; }
-	
-th { text-align: left; font-size:10px; color:#999999; padding-right:5px; white-space:nowrap; }
-
-a:link, a:visited { color:#444; text-decoration:none; }
-
-#maindiv {  margin:0 auto 0 auto;  display:block; overflow:hidden;}
 
 /*borders*/
 .border-tb-gray {
@@ -42,34 +90,78 @@ a:link, a:visited { color:#444; text-decoration:none; }
     border-bottom: 1px solid #bbb;
 }
 
+.border-bottom-faded-gray {
+        border-bottom: 1px solid #ccc;
+}
+
+.border-0 {
+         border: 0 !important;
+}
+
+.padding-0 {
+    padding: 0 !important;
+}
+
+.validationgood {
+    background-color: #ebf5dc !important;
+}
+.validationerror {
+    background-color: #f7dbdd !important;
+}
+
 //background colors using mixin ui-bg-colors
 .message {
   @include ui-bg-colors($color-palette);
     position: relative;
   float:left;
-  padding: 10px;
-  margin: 20px 10px;
-  box-shadow:0 2px 5px rgba(0,0,0,.3);
-  background: #BBB;
-  color: #FFF;
   -webkit-transition: all .5s ease;
      -moz-transition: all .5s ease;
       -ms-transition: all .5s ease;
        -o-transition: all .5s ease;
           transition: all .5s ease;
 }
+
 //text colors using mixin ui-colors
 .text {
-  @include ui-colors($color-palette);
+  @include ui-colors($foundation-palette);
+}
+
+.message {
+  @include ui-bg-colors($foundation-palette);
+    position: relative;
+  padding: 10px;
+}
+
+.errors {
+    background-color: #f7dbdd;
+    margin: 0 0 1rem 0;
+    padding: 1rem;
+    border: 1px solid rgba(68, 68, 68, 0.25);
+    border-radius: 2px;
+    position: relative;
+    color: #444;
 }
 
 .bg {
     @include ui-bg-colors($foundation-palette);
 }
-.button {
-      box-shadow:0 2px 5px rgba(0,0,0,.3);
+
+.bg-white {
+    background: white !important;
 }
 
+.margin-0 {
+    margin: 0 !important;
+}
+
+.has-tip {
+    border: 0;
+    font-weight: normal;
+    cursor: defualt;
+}
+
+
+.cart-price:before { display: inline-block; font-family:FontAwesome; content: "\f07a"; padding-right:10px;}
 //notes
 //1. removed img {border:0}
 //2. removed *html {font-size:10px;}

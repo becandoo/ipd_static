@@ -1,0 +1,16 @@
+.accordion-title {
+    font-size: 1rem;
+}
+.accordion-title::before {
+    content: '+';
+    position: absolute;
+    right: 1rem;
+    top: 40%;
+    margin-top: -0.5rem;
+    font-size: 150%;
+    font-weight: bold;
+}
+
+li.accordion-item {
+    border-bottom: 2px solid white;
+}

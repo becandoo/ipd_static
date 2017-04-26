@@ -1,0 +1,194 @@
+#promotioncode {
+    float: right;
+}
+
+.paypal-checkout-button {
+    padding: 0 !important;
+}
+
+.affirm-checkout-button {
+    padding: 0 !important;
+}
+.validationerror {
+    span {
+        i {
+            font-size: 140%;
+            line-height: 30px;
+        }
+    }
+}
+
+.validationgood {
+    span {
+        i {
+            font-size: 140%;
+            line-height: 30px;
+        }
+    }
+}
+
+/*step 1*/
+.ch4_loginColumns {
+    margin-top: 50px;
+    border-right: 1px solid #EEE;
+    padding-right: 20px;
+    box-sizing: border-box;
+    height: auto!important;
+    label {
+        display: inline-block;
+    }
+    fieldset {
+            border-top: 1px solid #cacaca !important;
+            border: 0;
+            &.fieldset {
+                    padding: 1.25rem !important;
+                    
+            }
+            legend {
+                background: transparent;
+                text-transform: none;
+            }
+    }
+
+.ch4_loginTitle {
+    letter-spacing: .025em;
+    border-bottom: #EEE solid 1px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    padding-bottom: 4px;
+    color: #333;
+}
+.ch4_loginText {
+    color: #333;
+    font-size: 12px;
+    min-height: 175px;
+    display: inline-block;
+    padding-top: 10px;
+.ch4_formLabel {
+    display: inline-block !important;
+    padding-right: 7px;
+    width: 120px;
+    padding-top: 14px;
+    margin-bottom: 5px;
+    font-weight: 700;
+    vertical-align: top;
+    word-wrap: break-word;
+}
+
+.ch4_formLabel, .ch4_formLabelWide {
+    font-size: 11px;
+    clear: both;
+    display: inline-block !important;
+}
+
+.ch4_formField {
+    padding-right: 0;
+    margin-top: 10px;
+    position: relative;
+    max-width: 300px;
+    vertical-align: top;
+    display: inline-block !important;
+}
+
+.ch4_loginTextField {
+    border: 1px solid #c1c1c1;
+    background: #fff;
+    outline: 0;
+}
+}
+
+.ch4_createText {
+    color: #333;
+    font-size: 12px;
+    display: inline-block;
+.ch4_formLabel {
+    display: inline-block !important;
+    padding-right: 7px;
+    width: 57px;
+    padding-top: 14px;
+    margin-bottom: 5px;
+    font-weight: 700;
+    vertical-align: top;
+    word-wrap: break-word;
+}
+
+.ch4_formLabel, .ch4_formLabelWide {
+    font-size: 11px;
+    clear: both;
+    display: inline-block !important;
+}
+
+.ch4_formField {
+    padding-right: 0;
+    margin-top: 10px;
+    position: relative;
+    max-width: 300px;
+    vertical-align: top;
+    display: inline-block !important;
+}
+
+    .ch4_loginTextField {
+        border: 1px solid #c1c1c1;
+        background: #fff;
+        outline: 0;
+        width: 247px;
+    }
+}
+.btn-paywithpaypal {
+    text-transform: none;
+    display: inline-block;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    color: #555;
+    padding: 10px 10px;
+    width: 248px;
+    background-color: #fff;
+    background: -webkit-gradient(linear,0 0,0 100%,from(#f1f1f1),to(#fff));
+    background: -webkit-linear-gradient(top,#fff 50%,#f1f1f1 100%);
+    background: -moz-linear-gradient(top,#fff 50%,#f1f1f1 100%);
+    background: -ms-linear-gradient(top,#fff 50%,#f1f1f1 100%);
+    background: -o-linear-gradient(top,#fff 50%,#f1f1f1 100%);
+    cursor: pointer;
+    font-weight: normal !important;
+    font-size: .9rem;
+    text-align: center;
+    margin-bottom: .5rem;
+    img {
+        width: 85px;
+        margin-left: 5px;
+    }
+}
+
+.btn-paywithaffirm { 
+    img {
+        width: 248px;
+    }
+    width: 248px;
+}
+
+.btn-guestButton{
+    margin: 0 auto;
+    display:block;
+    width: 248px;
+}
+
+.btn-newAccount {
+    width: 248px;
+    margin: 0 auto;
+    display:block;
+}
+
+.benefitsList {
+    font-size: 90%;
+}
+
+.btn-customerCheckout {
+    width: 248px;
+    margin: 0 auto;
+    display:block;
+}
+
+}
+

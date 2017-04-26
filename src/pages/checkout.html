@@ -1,0 +1,93 @@
+<div class="row">
+    <div class="small-12 columns">
+        <h3>Checkout</h3>
+    </div>
+</div>
+<div class="row">
+
+    <div class="small-12 large-8 small-centered columns">
+        <div class="row">
+
+            <div class="small-12 large-6 columns ch4_loginColumns">
+
+                <h5 class="ch4_loginTitle">Sign in</h5>
+
+                <form method="post" action="rcheckout.asp">
+
+                    <div class="box inputform">
+                        <input type="hidden" name="s" value="7pwmaq23044489">
+                        <input type="hidden" name="numStep" value="1">
+                        <div class="ch4_loginText">
+                            <div class="ch4_formLabel">
+                                <label>Email*</label>
+                            </div>
+                            <div class="ch4_formField"><input class="ch4_loginTextField" type="text" name="C_EmailAddress" id="C_EmailAddress" value=""
+                                    autocomplete="off" /></div>
+                            <div class="ch4_formLabel">
+                                <label for="C_Password">Password</label>
+                            </div>
+                            <div class="ch4_formField"><input class="ch4_loginTextField" type="password" name="C_Password" id="C_Password" autocomplete="off"></div>
+                        </div>
+                    </div>
+                    <div class="ch4_loginButton">
+                        <input class="button secondary btn-customerCheckout" type="submit" name="submitforward" id="submitforward" value="Customer Checkout">
+                    </div>
+
+
+                </form>
+            </div>
+            <!--<div class="small-12 large-4 columns ch4_loginColumns">
+		
+		<div class="section">
+			<h5 class="ch4_loginTitle">New Customers</h5>
+            <h6><strong>Customer benefits:</strong></h6>
+            <ul class="benefitsList">
+                <li>Exclusive offers & content</li>
+                <li>Faster checkout on return visits</li>
+                <li>Order tracking through our web portal</li>
+                <li>Order tracking through our web portal</li>
+                <li>Order tracking through our web portal</li>
+                <li>Order tracking through our web portal</li>
+            </ul>
+			<form method="post" action="rcheckout.asp">
+       
+			<div class="box inputform">
+				<input type="hidden" name="s" value="7pwmaq23044489">
+				<input type="hidden" name="numStep" value="1">		
+                <input class="button info btn-newAccount" type="submit" name="submitforward" id="submitforward2" value="Create an Account">            
+			</div></form>
+		</div>
+        </div>-->
+            <div class="small-12 large-6 columns ch4_loginColumns border-0">
+
+                <h5 class="ch4_loginTitle">Guests</h5>
+
+                <form method="post" action="rcheckout.asp">
+
+                    <div class="box inputform">
+                        <input type="hidden" name="s" value="7pwmaq23044489">
+                        <input type="hidden" name="numStep" value="1">
+                        <div class="ch4_createText">
+                            <div class="ch4_formLabel">
+                                <label for="C_Password">Email</label>
+                            </div>
+                            <div class="ch4_formField"><input class="ch4_loginTextField" type="password" name="C_Password" id="C_Password" autocomplete="off"></div>
+                        </div>
+                    </div>
+                    <div class="ch4_loginButton">
+                        <input class="button info btn-customerCheckout" type="submit" name="submitforward" id="submitforward" value="Create Account">
+                    </div>
+
+                    <!--<input class="button info btn-guestButton" type="submit" name="submitforward" id="submitforward2" value="Create Account">-->
+
+                    <fieldset class="fieldset text-center">
+                        <legend class="text-center">or checkout with</legend>
+                        <a data-elemname="paypal_checkout_link" id="payPalButton" class="btn-paywithpaypal">Pay with <img data-elemname="paypal_checkout_image" src="https://dev4.ipdusa.com/skin/images/paypal_logo.png" alt="PayPal"></a>
+                        <a data-elemname="paypal_checkout_link" id="affirmButton" class="btn-paywithaffirm"><img src="https://dev4.ipdusa.com/skin/images/pay-with-affirm.png" alt="Check out with Affirm"></a>
+                    </fieldset>
+            </div>
+            </form>
+        </div>
+    </div>
+</div>
+</div>

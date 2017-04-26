@@ -1,0 +1,33 @@
+#customerreview { display:block; overflow:hidden; text-align:center;}
+
+#customerreview #stars { 
+    display:block; 
+	margin:0 auto;
+	position:relative; 
+	overflow:hidden;
+    height: 50px;
+} 
+/*#customerreview #stars a { display:inline-block; width:55px; height:46px; background-image:url('https://dev4.ipdusa.com/skin/images/deadstar.jpg'); }
+*/
+#customerreview #stars a { margin: 10px; color: $dark-gray;}
+
+.star:after{
+    content: "\f005";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    position: absolute;
+    font-size: 25px;
+}
+
+.livestar:after{
+    color: #fcc415 !important;
+}
+
+#review {
+    textarea {
+        margin: 0 auto;
+        display: block;
+    }
+}

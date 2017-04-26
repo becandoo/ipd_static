@@ -1,20 +1,22 @@
 /*vehicle selector*/
-#vehicleselector { background: #1e232c; overflow:hidden; border-top:8px solid #457B9D; padding:8px; left:16px; /*top;0;*/  z-index:10;}
-
-.caption {
-    color: white;
-}
+#vehicleselector { background: #1e232c; overflow:hidden; border-top:1px solid #2a70a6; border-width: 12px; padding:8px; left:16px; /*top;0;*/  z-index:10;}
 
 #vehicleselector {
+    .caption {
+    color: $white !important;
+}
     select{
         margin: 0 0 0.6rem;
+        border-radius: 20px;
     }
     .button {
         margin: 0;
         &.warning {
             color: black;
             font-weight: normal;
-                font-size: 95%;
+            font-size: 95%;
+            border-radius: 20px;
+            float: right;
          }
     }
 }
@@ -27,6 +29,7 @@
         font-size: 120%;
     }
 }
+
 /*vehicle selector*/
 #vselector {
     background: #1e232c;
@@ -38,7 +41,7 @@
 }
 
 .caption {
-    color: white;
+    color: $white;
 }
 
 .vehicle-selector {
@@ -46,6 +49,14 @@
         color: black;
     }
 }
+
+/* Small only */
+@media screen and (max-width: 39.9375em) {
+        #vehicleselector {
+            margin-bottom: 20px;
+    }
+}
+
 //notes
 //1. removed position: absolute; border-radius:3px; width:192px; from #vehicleselector {}
 //2. removed position: absolute; width:658px; right:30px; from #vs-narrative {}

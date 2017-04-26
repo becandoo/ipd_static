@@ -13,29 +13,43 @@
 
 .top-bar-right ul li:first-child { padding:3px 3px 0 5px; margin-right:10px;}
 
-
 .middle-bar {
-background: darken(#fafafa, 3%);
-.row {
-    max-width: 1000px;
-}
+    background: #f2f2f2;
 }
 .val-bar{
     div{
        display: inline-block;
     }
     span {
-     font-size: 1.1rem;
-    line-height: 2.6rem;
-    color: #333;
+     font-size: 1.2rem;
+     line-height: 2.6rem;
+     color: darken($dark-gray, 15%);
+    }
+    i {
+        font-size: 1.5rem;
+        color: #333;
     }
 }
 
-.font-heading {
-    i{
-        font-size: 1.1rem;
-    }
+
+/* Small only */
+@media screen and (max-width: 39.9375em) {}
+
+@media screen and (max-width: 39.9375em) {}
+
+/* Medium and up */
+@media screen and (min-width: 40em) {
 }
+
+/* Medium only */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+}
+
+/* Large and up */
+@media screen and (min-width: 64em) {}
+
+/* Large only */
+@media screen and (min-width: 64em) and (max-width: 74.9375em) {}
 
 //notes
 //1. added box-sizing: initial; to #header4 div.search { }

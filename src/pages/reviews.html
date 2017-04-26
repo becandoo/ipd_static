@@ -1,0 +1,200 @@
+    <div class="row">
+        <div class="small-12 columns">
+<div id="customerreview">
+<p style="margin:5px;"><b>Please give product feedback that other shoppers may find helpful.</b><br>This is not the appropriate place for questions. HTML will be stripped.</p>
+<div id="stars">
+<a class="star" href="javascript:void(0);" id="star1" title="1 star rating" onclick="setrating('1');">&nbsp;</a>
+<a class="star" href="javascript:void(0);" id="star2" title="2 star rating" onclick="setrating('2');">&nbsp;</a>
+<a class="star" href="javascript:void(0);" id="star3" title="3 star rating" onclick="setrating('3');">&nbsp;</a>
+<a class="star" href="javascript:void(0);" id="star4" title="4 star rating" onclick="setrating('4');">&nbsp;</a>
+<a class="star" href="javascript:void(0);" id="star5" title="5 star rating" onclick="setrating('5');">&nbsp;</a>
+</div>
+
+        <form method="post" name="review" id="review" action="/customerreview.asp" onsubmit="return submitform(this);">
+        <input type="hidden" name="s" value="lxz75d23044392">
+        <input type="hidden" id="REV_RATING" name="REV_RATING" value="0">
+        <input type="hidden" name="P_ID" value="12073">
+        <input type="hidden" name="submitted" value="1">
+        <textarea name="REV_TEXT" id="REV_TEXT" cols="30" rows="10" wrap="on" style="width:450px; height:200px; font-family:Tahoma,Arial,Verdana;font-size:10pt;"></textarea>
+        <br><input type="submit" class="button success accept" value="Submit Review"> <input type="submit" class="button alert accept" value="Cancel">
+        </form>
+
+<script type="text/javascript">
+
+	function submitform(frm) {
+
+		f=document.getElementById('REV_TEXT').value;
+
+            if (f.length==0) {
+                alert('Please give feedback that other shoppers may find helpful.');
+                return false;
+            }
+
+            f=document.getElementById('REV_RATING');
+            
+            if (f.value==0) {
+                alert('Please select a star rating.');
+                return false;
+            }
+
+            return true;
+        }
+        
+        $('.star').click(function(e){
+        var length = $('#stars .star').length;
+        var selected = $('#stars .star').index($(this));
+        
+        $( "#stars .star" ).each(function( index ) {
+        if(index <= selected){
+            
+        $(this).addClass("livestar");
+            
+        }else{
+            $(this).removeClass("livestar");            
+        }            
+        });    
+    });
+
+	function setrating(rating) {
+		document.getElementById('REV_RATING').value=rating;
+		var x=document.getElementById('stars');
+	}
+</script>
+
+<!--<script type="text/javascript">
+
+	function submitform(frm) {
+		f=document.getElementById('REV_TEXT').value;
+		if (f.length==0) {
+			alert('Please give feedback that other shoppers may find helpful.');
+			return false;
+		}
+		f=document.getElementById('REV_RATING');
+		if (f.value==0) {
+			alert('Please select a star rating.');
+			return false;
+		}
+		return true;
+	}
+	function setrating(rating) {
+		document.getElementById('REV_RATING').value=rating;
+		var x=document.getElementById('stars');
+		switch(rating) {
+		case '1': {            
+			document.getElementById('star1').className = "livestar star";
+			document.getElementById('star2').className = "deadstar star";
+			document.getElementById('star3').className = "deadstar star";
+			document.getElementById('star4').className = "deadstar star";
+			document.getElementById('star5').className = "deadstar star";
+			break; 
+			}
+
+		case '2': { 
+			document.getElementById('star1').className = "livestar star";
+			document.getElementById('star2').className = "livestar star";
+			document.getElementById('star3').className = "deadstar star";
+			document.getElementById('star4').className = "deadstar star";
+			document.getElementById('star5').className = "deadstar star";
+			break; 
+			}
+
+		case '3': { 
+			document.getElementById('star1').className = "livestar star";
+			document.getElementById('star2').className = "livestar star";
+			document.getElementById('star3').className = "livestar star";
+			document.getElementById('star4').className = "deadstar star";
+			document.getElementById('star5').className = "deadstar star";
+			break; 
+			}
+
+		case '4': { 
+			document.getElementById('star1').className = "livestar star";
+			document.getElementById('star2').className = "livestar star";
+			document.getElementById('star3').className = "livestar star";
+			document.getElementById('star4').className = "livestar star";
+			document.getElementById('star5').className = "deadstar star";
+			break; 
+			}
+
+		case '5': { 
+			document.getElementById('star1').className = "livestar star";
+			document.getElementById('star2').className = "livestar star";
+			document.getElementById('star3').className = "livestar star";
+			document.getElementById('star4').className = "livestar star";
+			document.getElementById('star5').className = "livestar star";
+			break; 
+			}
+		}
+	}
+</script>-->
+
+<!--<script type="text/javascript">
+
+	function submitform(frm) {
+		f=document.getElementById('REV_TEXT').value;
+		if (f.length==0) {
+			alert('Please give feedback that other shoppers may find helpful.');
+			return false;
+		}
+		f=document.getElementById('REV_RATING');
+		if (f.value==0) {
+			alert('Please select a star rating.');
+			return false;
+		}
+		return true;
+	}
+	function setrating(rating) {
+		document.getElementById('REV_RATING').value=rating;
+		var x=document.getElementById('stars');
+		switch(rating) {
+		case '1': { 
+			document.getElementById('star1').style.backgroundImage="url('https://dev4.ipdusa.com/skin/images/livestar.jpg')";
+			document.getElementById('star2').className = "livestar star";
+			document.getElementById('star3').className = "livestar star";
+			document.getElementById('star4').className = "livestar star";
+			document.getElementById('star5').className = "livestar star";
+			break; 
+			}
+
+		case '2': { 
+			document.getElementById('star1').style.backgroundImage="url('https://dev4.ipdusa.com/skin/images/livestar.jpg')";
+			document.getElementById('star2').className = "livestar star";";
+			document.getElementById('star3').className = "livestar star";
+			document.getElementById('star4').className = "livestar star";
+			document.getElementById('star5').className = "livestar star";
+			break; 
+			}
+
+		case '3': { 
+			document.getElementById('star1').style.backgroundImage="url('https://dev4.ipdusa.com/skin/images/livestar.jpg')";
+			document.getElementById('star2').className = "livestar star";";
+			document.getElementById('star3').className = "livestar star";
+			document.getElementById('star4').className = "livestar star";
+			document.getElementById('star5').className = "livestar star";
+			break; 
+			}
+
+		case '4': { 
+			document.getElementById('star1').style.backgroundImage="url('https://dev4.ipdusa.com/skin/images/livestar.jpg')";
+			document.getElementById('star2').className = "livestar star";";
+			document.getElementById('star3').className = "livestar star";
+			document.getElementById('star4').className = "livestar star";
+			document.getElementById('star5').className = "livestar star";
+			break; 
+			}
+
+		case '5': { 
+			document.getElementById('star1').style.backgroundImage="url('https://dev4.ipdusa.com/skin/images/livestar.jpg')";
+			document.getElementById('star2').className = "livestar star";";
+			document.getElementById('star3').className = "livestar star";
+			document.getElementById('star4').className = "livestar star";
+			document.getElementById('star5').style.backgroundImage="url('https://dev4.ipdusa.com/skin/images/livestar.jpg')";
+			break; 
+			}
+		}
+	}
+</script>-->
+</div>
+
+        </div>
+    </div>

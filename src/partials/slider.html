@@ -1,0 +1,74 @@
+<section id="slider" class="none">
+    <div class="expanded row small-collapse">
+        <div class="small-12 columns">
+            <!--slider Start Here -->
+            <div class="banner">
+                <div class="orbit b-slider autodealer-slide" role="region" aria-label="ipd-c70-concept" data-orbit>
+                    <ul class="orbit-container">
+                        <li class="orbit-slide is-active">
+                            <img class="orbit-image" src="assets/img/ipd-modern-banner.PNG">
+                            <!--<img class="orbit-image" src="assets/img/ipd-capture.png">-->
+                        </li>
+                    </ul>
+                </div>
+                <div class="resto-info">
+        <div class="row">
+          <div class="small-12 columns small-centered">
+            <ul class="tabs show-for-large" data-tabs id="example-tabs">
+              <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Shop By Vehicle</a></li>
+              <li class="tabs-title"><a href="#panel2" aria-selected="true">Shop By Model</a></li>
+              <li class="tabs-title"><a href="#panel3" aria-selected="true">Shop 'My Garage'</a></li>
+              <li class="tabs-title"><a href="#panel3" aria-selected="true">Shop By Category</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="tabs-content" data-tabs-content="example-tabs">
+          <div class="tabs-panel is-active" id="panel1">
+            <form class="vehicle-selector">
+          <div class="row">
+            <h2 class="hide-for-large text-center">Shop By Vehicle</h2>
+            <div class="medium-3 columns">
+              <label>Year
+                            <select></select>
+                        </label>
+            </div>
+            <div class="medium-3 columns">
+              <label>Make
+                            <select></select>
+                        </label>
+            </div>
+                        <div class="medium-3 columns">
+              <label>Model
+                            <select></select>
+                        </label>
+            </div>
+            <div class="medium-3 columns">
+              <label>Body Style
+                            <select></select>
+                        </label>
+            </div>
+          </div>
+          <div class="row">
+          <div class="small-12 columns">
+              <br>
+              <button class="button secondary">SHOP NOW</button>
+            </div>
+
+          </div>
+        </form>
+          </div>
+          <div class="tabs-panel" id="panel2">
+              {{>shop-by-model}}
+          </div>
+          <div class="tabs-panel" id="panel3">
+            {{>shop-by-category}}
+          </div>
+        </div>
+</div>
+</div>
+</div>
+</div>
+<!--slider End Here -->
+
+</div>
+</section>

@@ -1,0 +1,12 @@
+.button {
+    &.round {
+        display: inline-block;
+        padding: 1em 1.8em;
+        border-radius: 50em;
+        text-transform: uppercase;
+        color: #ffffff;
+        font-weight: 700;
+        letter-spacing: .1em;
+        transition: all .2s;
+    }
+}

@@ -3,37 +3,32 @@
     <div class="row">
         <div class="columns small-12">
             <div id="logos" class="top-bar-title">
-                <span class="mobile-menu-icon"data-responsive-toggle="responsive-menu" data-hide-for="medium">
+                <span class="mobile-menu-icon"data-responsive-toggle="responsive-menu" data-hide-for="large">
                     <button class="menu-icon dark" type="button" data-toggle></button>
                 </span>
                 <a href="https://www.ipdusa.com/"><img class="logo" src="https://www.ipdusa.com/skin/images/ipdlogo150.png"></a>
-                <a href="https://www.wpdusa.com" target="_blank" class="wpd"><img class="logo" src="https://www.wpdusa.com/css/images/wpd-logo-header.jpg"></a>
-            </div>
-           
-            <div id="responsive-menu" class="top-bar-text">
-                <div class="top-bar-left">
-                    <div class="show-for-medium"><span class="slogan">The Volvo Parts, Accessories &amp; Performance Specialists Since 1963</span></div>
-                </div>
-         
-                <div id="header4" class="top-bar-right menu-centered">
-                    <!--<ul class="menu">
-                        <li><input id="productsearchwords" type="search" placeholder="search products..."></li>
-                        <li><button id="productsearchbutton" type="button" class="button primary"><i class="fa fa-search"></i></button></li>              
-                    </ul>-->
-                    <!--new search/cart concept: click on search button to display search bar on new row. Working in ipd_components_redesign-->
+                <a href="https://www.wpdusa.com" target="_blank" class="wpd show-for-large"><img class="logo" src="https://www.wpdusa.com/css/images/wpd-logo-header.jpg"></a>
+                                <div id="header4" class="top-bar-right menu-centered hide-for-large">
                     <ul class="menu">
-                            <li><a id="init-search" class="search"><i class="fa fa-search"></i>Search</a></li>
-                            <li><a href="https://www.ipdusa.com/basket.asp" class="cart" id="cartprice">$0.00</a></li>
+                            <li><a id="init-search" class="search"><i class="fa fa-search"></i><span class="show-for-medium">Search</span></a></li>
+                            <li><a href="https://www.ipdusa.com/basket.asp" class="cart cart-price" id="cartprice">$0.00</a></li>
                         </ul>
                 </div>
-                <div class="top-bar-right hide-for-medium menu-centered">
-                    <ul class="menu">
-                        <li><span class="phone"><a href="tel:18004446473">1-800-444-6473</a></span></li>
-                        <li class="toplevel"><a href="https://www.ipdusa.com/basket.asp" id="cartprice">$0.00</a></li>                      
-                    </ul>
+            </div>                    
+            <div id="responsive-menu" class="top-bar-text">
+                <div class="top-bar-left">
+                    <div class="show-for-large"><span class="slogan">The Volvo Parts, Accessories &amp; Performance Specialists Since 1963</span></div>
                 </div>
-                <div class="top-bar-right menu-centered">
-                    <ul class="menu vertical hide-for-medium">
+         
+                <div id="header4" class="top-bar-right menu-centered show-for-large">
+                    <ul class="menu">
+                            <li><a id="init-search" class="search"><i class="fa fa-search"></i>Search</a></li>
+                            <li><a href="https://www.ipdusa.com/basket.asp" class="cart cart-price" id="cartprice">$0.00</a></li>
+                        </ul>
+                </div>
+                <div id="mobile-menu" class="menu-centered">
+                    <ul class="menu vertical hide-for-large">
+                        <li><span class="phone"><a href="tel:18004446473">1-800-444-6473</a></span></li>
                         <li class="toplevel"><a href="https://www.ipdusa.com/">Home</a></li>
                         <li class="toplevel"><a href="https://www.ipdusa.com/prodtype.asp" title="Find ipd Products">Shopping</a></li>
                         <li class="toplevel"><a href="https://www.ipdusa.com/promotions.asp">Deals</a></li>
@@ -52,20 +47,3 @@
 </div>
 
 <!--/new headertopbar-->
-
-<!--#headertopbar
-<div id="headertopbar">
-    <a href="https://dev4.ipdusa.com/"><img class="logo" src="https://dev4.ipdusa.com/skin/images/ipdlogo150.png"></a>
-    <a href="https://www.wpdusa.com" target="_blank" class="wpd"></a>
-    <span class="slogan">The Volvo Parts, Accessories &amp; Performance Specialists Since 1963</span>
-    <span class="phone"><a href="tel:18004446473">800-444-6473</a></span>
-</div>
-#headertopbar-->
-
-<!--notes
-1. added foundation top-bar to replace #headertopbar
-2. replaced <a href="https://www.wpdusa.com" target="_blank" class="wpd"></a> with 
-    <a href="https://www.wpdusa.com" target="_blank" class="wpd"><img class="logo" src="https://www.wpdusa.com/css/images/wpd-logo-header.jpg"></a>
-3. Moved search components from header4 bar to top-bar. Removed span and replaced with button.
-4. Moved cart component from header4 bar to top-bar.  
--->

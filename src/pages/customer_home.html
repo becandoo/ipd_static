@@ -1,0 +1,72 @@
+<div class="row">
+    <div class="small-12 columns>
+
+        <h1>My Account</h1>
+        <div class="customer">
+
+
+
+            <div class="section">
+                <div class="clearpad">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td style="padding-right:10px;">Email Address:</td>
+<td>brandoncranmore@gmail.com</td>
+</tr>
+<tr>
+    <td style="padding-right:10px;">Account name:</td>
+<td>BRANDON CRANMORE</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section">
+
+
+
+
+<div class="clearpad"><a href="/customer_garage.asp" class="button success">Go To My Garage</a><a href="https://dev4.ipdusa.com/customer_changelogin.asp?s=ervhf723044317" class="button primary">Change my email address or password</a><a href="https://dev4.ipdusa.com/customer_changedetails.asp?s=ervhf723044317" class="button primary">Change my Contact Information</a><a class="button alert" href="https://dev4.ipdusa.com/customer_account.asp?s=ervhf723044317&amp;strLogout=y">Log Me Out</a></div>
+
+
+
+<div class="section">
+    <h2>Order History</h2>
+    <p><a href="customer_order_history.asp" class="zbtn zbtn-primary">View My Order History</a></p>
+</div>
+
+
+
+
+
+<div class="section savebaskets">
+    <h2>Stored Shopping Carts</h2>
+    <p><a href="customer_savecart.asp?s=sosko223636249" class="zbtn zbtn-primary">View my Saved Shopping Carts</a></p>
+
+
+
+    <div class="section">
+        <h2>IPD Classified Ads</h2>
+        <p><a href="customer_classifieds.asp" class="zbtn zbtn-info">Maintain My Classified Ads</a></p>
+    </div>
+
+    <div class="section">
+        <h2>Email Promotions</h2>
+        <p>We occasionally send emails promoting new products and letting you know of upcoming sale pricing.<br>(This will not
+            change your ability to receive order status updates via email.)</p>
+        <p id="emailpromotions"> <span>You are currently included in email promotions</span> <a id="togglepromotions" class="zbtn zbtn-danger zbtn-small"
+                href="javascript:void(0);" onclick="ajaxtoggleemailpromotion()">Unsubscribe</a>
+</p>
+</div>
+
+
+</div>
+</div>
+
+
+<script type="text/javascript"><!--
+        function ajaxtoggleemailpromotion() { obj = document.getElementById('togglepromotions'); if (obj != null) { obj.disabled = true; }; var index = ajax.length; ajax[index] = new sack(); ajax[index].method = 'GET'; ajax[index].execute = true; ajax[index].requestFile = '/ajax_toggle_email_promotions.asp'; ajax[index].setVar('s', sessioncode); ajax[index].runAJAX(); }
+//--></script>
+</div>
+</div>

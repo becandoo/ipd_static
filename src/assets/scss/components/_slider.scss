@@ -1,0 +1,202 @@
+/*
+1.1) Banner Section
+ -----------------------------*/
+#slider {
+	width: 100%;
+	padding-top: 134px
+}
+body #slider, body .none {
+	padding-top: 0 !important;
+}
+body .top-m, body #slider.top-m {
+	padding-top: 134px !important;
+}
+.banner-slider {
+	position: relative;
+	width: 100%;
+}
+.banner-content {
+	width: 100%;
+	max-width: 1170px;
+	padding: 0 15px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: 50px auto 0;
+	top: 50%;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+}
+.banner-slider ul {
+	list-style: none;
+}
+.banner-slider li {
+	position: relative;
+	overflow: hidden;
+}
+.banner-slider h2 {
+	font-size: 50px;
+	color: #fff;
+	line-height: 1;
+	padding-bottom: 0;
+	margin: 0;
+}
+.banner-slider span {
+	padding: 30px 0 34px;
+	font-size: 20px;
+	color: #fff;
+	display: block;
+	line-height: 1.5;
+}
+.tp-caption {
+	border-left-style: solid;
+	border-left-width: 3px !important;
+	padding-left: 35px !important;
+}
+.tp-simpleresponsive .caption, .tp-simpleresponsive .tp-caption {
+	position: static;
+	white-space: normal !important;
+}
+
+/* Slider
+ ---------------------------*/
+
+ #slider {
+	position: relative;
+}
+.auto-tab-list li {
+	list-style: none;
+	display: inline-block;
+	padding: 20px 40px;
+	line-height: 1;
+	font-size: 20px;
+	text-transform: uppercase;
+	margin-bottom: 0;
+}
+.auto-tab-list li > a, .auto-tab-list li > a:hover {
+	color: $white;
+	text-decoration: none;
+	font-weight: 600;
+}
+.mid {
+	display: block;
+}
+.mid + .mid {
+	display: none;
+}
+.resto-info {
+    position: absolute;
+    width: 100%;
+    padding: 0 0 53px;
+    z-index: 10;
+    bottom: -56px;
+}
+.auto-tab-list {
+	display: inline-block;
+	position: relative;
+	top: -59px;
+}
+ .resto-info .btn-group {
+	width: 100%;
+	margin-bottom: 15px;
+}
+ .resto-info .btn-group .btn {
+	padding: 13px;
+}
+ .resto-info .btn .caret {
+	position: absolute;
+	right: 15px;
+	top: 26px;
+	color: #282d35;
+}
+ .autodealer-slide .slides li img{
+ 	width: 100%;
+}
+ .price-meter {
+	height: 6px;
+	width: 100%;
+	position: relative;
+	display: block;
+}
+ .price-meter:after,  .price-meter:before,  .price-meter-wrap .min-price,  .price-meter-wrap .max-price {
+	position: absolute;
+	content: "";
+	width: 14px;
+	height: 14px;
+	border-radius: 100%;
+	background: #fff;
+	top: -5px;
+	cursor: pointer;
+}
+ .price-meter:before,  .price-meter-wrap .min-price {
+	left: 0;
+}
+ .price-meter:after,  .price-meter-wrap .max-price {
+	right: 0;
+}
+ .price-meter-wrap {
+	font-size: 20px;
+	font-weight: 300;
+	color: $white;
+	margin-bottom: 34px;
+	position: relative;
+}
+ .price-meter-wrap .min-price,  .price-meter-wrap .max-price {
+	color: $white;
+	font-weight: 300;
+	bottom: -14px;
+	background: none;
+	top: auto;
+	font-weight: 300;
+	width: auto;
+}
+ .resto-info .btn-default {
+	height: 56px;
+	font-size: 20px;
+	line-height: 2.6
+}
+ .autodealer-slide .flex-direction-nav {
+	top: 60%;
+	left: 0;
+	margin: 0 auto;
+	max-width: 1070px;
+	position: absolute;
+	right: 0;
+	text-align: right;
+	width: 100%;
+	z-index: 10;
+}
+ .autodealer-slide .flex-direction-nav li,  .autodealer-slide .flex-direction-nav li a {
+	display: inline-block;
+}
+
+.vehicle-selector {
+    h2 {
+        color: $white;
+    }
+    select {
+        padding: 13px;
+        height: 3.8rem;
+        background-size: 14px 22px;
+        background-position: right -.4rem center;
+    }
+    input {
+        padding: 13px;
+        height: 3.8rem;
+    }
+    label {
+        font-size: 1.3rem;
+        color: $white;
+    }
+    button {
+        padding: 13px;
+        height: 56px;
+        float: right;
+    }
+}
+
+.shop-by-model {
+    a {
+        color: $white;
+    }
+}

@@ -1,0 +1,166 @@
+/*basket
+div.basket div.cart-row span { color:#000000; cursor:default; display:block; float:left;  font-weight:normal; margin: 14px 5px 4px 8px; }
+div.basket div.cart-row span input[type="text"],
+div.basket div.cart-row span input[type="password"] {  background-color:#ffffff; border:1px solid #999999; }	
+div.basket div.cart-row span.links { padding:1px; margin-top:5px; }
+div.basket div.cart-row span.recalculate { width:200px;  padding:1px; margin-top:5px; }
+div.basket div.cart-row span.date { width:60px; font-size:10px; margin-left:5px;}
+div.basket div.cart-row span.change { width:50px; margin-left:5px; margin-top:5px; }	
+div.basket div.cart-row span.multiplier { width:10px; }
+div.basket div.cart-row span.equalizer { width:10px; margin-left:10px; }
+div.basket div.cart-row span.unitnet { width:75px; text-align:right; font-weight:normal; }	
+div.basket div.cart-row span.extnet { width:75px; text-align:right; }	
+div.basket div.cart-row span.remove { float:right; margin-left:10px; margin-top:5px; padding:1px; }
+div.basket div.cart-row span.couponcaption { width:90px; margin-left:5px; }
+div.basket div.cart-row span.couponinput { width:105px; margin-top:2px; }
+div.basket div.cart-row span.couponinput input { width:100px; }
+div.basket div.cart-row span.couponsubmit { width:100px; margin-top:7px; }
+div.basket div.cart-row span.promocaption { width:auto;}
+div.basket div.cart-row span.promoinput { width:105px; margin-top:3px; }
+div.basket div.cart-row span.promoinput input { width:100px; }
+div.basket div.cart-row span.promosubmit { width:auto; margin-top:7px; }
+div.basket div.cart-row span.shipmethod { width:180px; margin-left:5px; font-weight:bold; }
+div.basket div.cart-row span.shipdesc { font-size:10px; width:445px; }
+div.basket div.cart-row span.shiperror { color:#ff0000; }
+div.basket div.cart-row span.caption { font-size:10px; margin-top:2px; }
+
+/*checkout
+div#checkout { display:block; overflow:hidden; clear:both; margin:0 0 0 0; }
+div#checkout a { border:0; margin:2px; float:right;}
+div#checkout a.accepted { float:left; }
+div#checkout a.checkout { float:right; }
+div#checkout a.return { float:right; }
+*/
+
+#checkout {
+    img{
+        &.cards {
+            width: 190px;
+        }
+        &.paypal {
+            width: 120px;
+        }
+    }
+}
+table.cart {    
+    thead {
+        background: white;
+        border: 0 !important;
+    }
+    tr {
+        background: white !important;
+        td {
+            padding: 6px;
+        }
+    }
+    tbody {
+        border: 0;
+    }
+    tfoot {
+        tr {
+            td {
+                a {
+                    margin: 0 !important;
+                    font-weight: normal;
+                }
+            }
+        }
+        border: 0;
+    }
+}
+#total {
+    float: right;
+    font-size: 120%;
+    font-weight: bold;
+}
+.cart-total {
+    span{
+        float: left;
+        &.description {
+            float:right;
+        }
+    }
+}
+span.recalculate {
+    a {
+        float: left;
+    }
+}
+span.remove {
+    a.text.alert {
+        margin: 0;
+        font-size: 22px;
+        font-weight: 500;
+    }
+}
+
+span.quantity {
+        display: inline-block;
+    margin-right: 10px;
+    input {
+        width: 50px;
+    }
+}
+
+.accordion-title {
+    font-size: 120%;
+    color: black;
+}
+
+.getrates {
+    td {
+        .button {
+            margin: 0 !important;
+        }
+    }
+}
+
+.expeditestatement {
+    h2 {
+            font-size: 1.31579rem;
+    }
+}
+
+
+.updatequantity {
+    margin: 0;
+    a {
+        margin: 0;
+    }
+}
+
+.total {
+    font-weight: bold;
+    
+}
+
+/* Small only */
+@media screen and (max-width: 39.9375em) {
+    span.recalculate {
+        a {
+            margin-left: 0;
+        
+        }
+    }
+    div.basket div.cart-row span.recalculate {
+    width: 100px;
+}
+}
+
+/* Medium and up */
+@media screen and (min-width: 40em) {}
+
+/* Medium only */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+        div.basket div.cart-row span.links {
+        width: 595px;
+    }
+}
+
+/* Large and up */
+@media screen and (min-width: 64em) {
+
+}
+
+/* Large only */
+@media screen and (min-width: 64em) and (max-width: 74.9375em) {}

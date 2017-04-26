@@ -1,0 +1,11 @@
+.callout {
+    &.secondary {
+        &.dark {
+            background-color:#1e232c !important;
+
+            input {
+                background-color: white;
+            }
+        }
+    }
+}

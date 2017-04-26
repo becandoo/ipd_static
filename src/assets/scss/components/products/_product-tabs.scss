@@ -1,5 +1,37 @@
+/*jssor slider*/
+.jssora07l, .jssora07r {
+	display: block;
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	cursor: pointer;
+	background: url('/skin/images/jssora_arrows.png') no-repeat;
+	overflow: hidden;
+}
+.jssora07l { background-position: -5px -35px; }
+.jssora07r { background-position: -65px -35px; }
+.jssora07l:hover { background-position: -125px -35px; }
+.jssora07r:hover { background-position: -185px -35px; }
+.jssora07l.jssora07ldn { background-position: -245px -35px; }
+.jssora07r.jssora07rdn { background-position: -305px -35px; }
+
+
+.jssort01 { position: absolute; width: 640px; height: 75px; padding:5px 0 2px 0; bottom:0; }
+.jssort01 .p { position: absolute; top: 0; left: 0; width: 100px; height: 75px; }
+.jssort01 .t { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; }
+.jssort01 .w { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+.jssort01 .c { position: absolute; top: 0; left: 0; width: 96px; height: 71px;}
+.jssort01 .pav .c { top: 0; width: 96px; height: 71px; }
+.jssort01 .p:hover {cursor:pointer; } 
+.jssort01 .p.pdn .c { width: 96px; height: 71px;}
+			
+	
+
+#producttabs {
+
 .tabs {
     border: 0;
+    background: white;
 }
 .tabs-title {
     margin: 3px;
@@ -29,7 +61,16 @@
     background: #1e232c;
     color: white;
 }
+}
+#vehicleapplications {
 
+    h6 {
+    cursor:pointer;
+    i {
+        margin-right: 5px;
+    }
+    }
+}
 /* Small only */
 @media screen and (max-width: 39.9375em) {
         .tabs-title {

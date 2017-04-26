@@ -1,0 +1,24 @@
+div.classifiedbox div.classifiedad div.headerblock span {display:block; float:left; margin:0 10px 0 0;} 
+div.classifiedbox div.classifiedad div.headerblock span.category{font-weight:bold;} 
+div.classifiedbox div.classifiedad div.headerblock span.customer{display:block; float:right; margin:0 10px 0 0; font-weight:bold;} 
+div.classifiedbox div.classifiedad div.contentblock { display:block; overflow:hidden; clear:both; padding:5px;  }
+div.classifiedbox div.classifiedad div.imageblock { padding:5px; display:block; overflow:hidden; clear:both;}
+div.classifiedbox div.classifiedad div.imageblock img { border: 1px solid #557799; margin: 2px 5px 2px 0px; }
+div.disclaimer { display:block; overflow:hidden; clear:both;  }
+div.disclaimer p {margin:0 0 10px 0;}
+div.noclassifieds { display:block; clear:both; overflow:hidden; font-size:14px; font-weight:bold; color:#990033; margin: 30px;}
+
+div.headerblock {
+    display: inline;
+}
+div.cllinks {
+    display: inline;
+    float: right;
+}
+
+div.customerblock {
+    float: left;
+    span {
+        margin-right: 10px;
+    }
+}
