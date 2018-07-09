@@ -1,0 +1,99 @@
+// Large only
+
+        .middle-bar {
+        background-color: #393E41;
+        color: $white;
+        min-height: 110px;
+        padding: 20px;
+    }
+
+    .social {
+        margin-top: 10px;
+        .uk-icon-button {
+            box-sizing: border-box;
+            width: 45px;
+            height: 45px;
+            border-radius: 500px;
+            background: #eee;
+            border: 1px solid #333;
+            color: #2a70a6;
+            vertical-align: middle;
+            display: -ms-inline-flexbox;
+            display: -webkit-inline-flex;
+            display: inline-flex;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+            -webkit-transition: .1s ease-in-out;
+            transition: .1s ease-in-out;
+            -webkit-transition-property: color, background-color;
+            transition-property: color, background-color;
+            &:hover {
+                    color: #333;
+            }
+            &.facebook {
+                &:hover {
+                    background: #3b5998;
+                }
+            }
+            &.twitter {
+                &:hover {
+                    background: #00b6f1;
+                }
+            }
+            &.youtube {
+                &:hover {
+                    background: #b31217;
+                }
+            }
+            &.instagram {
+                &:hover {
+                    background: #7232bd;
+                }
+            }
+            &.google-plus {
+                &:hover {
+                    background: #df4a32;
+                }
+            }
+            i {
+                color: inherit;
+                font-size: 1.6rem;
+            }
+        }
+    }
+
+
+#search {
+    position: relative;
+    display: inline-block;
+    margin-top: 12px;
+    width: 100%;
+    input {
+        height: 50px;
+        border-radius: 500px;
+            min-width: 296px;
+        margin-bottom: 0;
+        padding-left: 30px;
+        font-size: 16px;
+    }
+    button {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 12px 0;
+        width: 50px;
+        height: 50px;
+        font-size: 1.4rem;
+        border-radius: 0px 20px 20px 0px;
+        background-color: #2a70a6;
+        color: $light-gray;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+

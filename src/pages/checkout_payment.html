@@ -1,0 +1,176 @@
+<div class="row">
+    <div class="small-12 medium-9 columns ch4_checkout">
+        <form method="post" action="checkout.html">
+            <div id="ch4_checkoutItems">
+                <div id="ch4_checkoutHeadingOpen" class="ch4_uppercase">1. PAYMENT</div>
+                <div class="ch4_checkoutForm" id="ch4_checkoutPaymentForm">
+                    <input type="hidden" name="numStep" value="<%= numStep %>" />
+                    <input type="hidden" name="C_EmailAddress" value="<%= WriteSafe(C_EmailAddress) %>" />
+                    <input type="hidden" name="C_Password" value="<%= WriteSafe(C_Password) %>" />
+                    <input type="hidden" name="C_CardholderName" id="C_CardholderName" value="<%= WriteSafe(C_CardholderName) %>" />
+                    <input type="hidden" name="C_ShippingPostCode" id="C_ShippingPostCode" value="<%= WriteSafe(C_CardholderPostCode) %>" />
+                    <div class="row">
+                        <div class="ch4_paymentSection small-12 medium-10 columns medium-centered">
+                            <h6>Billing Information</h6>
+                            <div class="row">
+                                <div class="small-6 columns">
+                                    <label for="C_CardholderFirstName">First Name</label>
+                                    <input type="text" size="50" name="C_CardholderFirstName" placeholder="first name" value="" id="C_CardholderFirstName" />
+                                </div>
+                                <div class="small-6 columns">
+                                    <label for="C_CardholderLastName">Last Name</label>
+                                    <input type="text" size="50" name="C_CardholderLastName" placeholder="last name" value="" id="C_CardholderLastName" />
+                                </div>
+                            </div>
+                            <!--/.row-->
+                            <div class="row">
+                                <div class="small-9 columns">
+                                     <label for="C_CardholderTownCity">City</label>
+                                    <input type="text" name="C_CardholderTownCity" placeholder="city" value="" id="C_CardholderTownCity" />                                     
+                                </div>
+                                <div class="small-3 columns">
+                                    <label for="C_CardholderCounty">State</label>
+                                    <input type="text" name="C_CardholderCounty" placeholder="state" value="" id="C_CardholderCounty" />                                  
+                                </div>
+                            </div>
+                            <!--/.row-->
+                            <div class="row">
+                                <div class="small-4 columns">
+                                    <label for="C_CardholderPostCode">Zipcode</label>
+                                    <input type="text" name="C_CardholderPostCode" placeholder="zipcode" value="" id="C_CardholderPostCode" />
+                                </div>
+                                <div class="small-8 columns">
+                                    <label for="C_CardholderCountry">Country</label>
+                                    <select name="C_CardholderCountry" id="C_CardholderCountry" size="1">
+                                        <option selected="selected" value="201">USA</option>
+                                    </select>
+                                </div>
+                            </div><!--/.row-->
+                            <input id="shipToBillAdd" name="shipToBillAdd" checked="" type="checkbox">
+                            <label for="shipToBillAdd">Ship to this address</label>
+                        </div><!--/.ch4_billingSection-->
+                    </div><!--/.row-->
+                    <div class="row">
+                        <div class="ch4_paymentSection small-12 medium-10 columns medium-centered">
+                            <h6>Payment Method</h6>
+                            <input id="payWithCard" name="strPaymentSystem" value="gwlocal" type="radio">
+                            <label for="checkbox1"><img class="cards accepted" src="https://dev4.ipdusa.com/skin/images/acceptedcreditcards.jpg"></label>
+                            <input id="payWithPaypal" name="strPaymentSystem" value="paypal" type="radio">
+                            <label for="checkbox1"><img class="paypal accepted" src="https://dev4.ipdusa.com/skin/images/paypal_logo.png"></label>
+                            <input id="payWithAffirm" name="strPaymentSystem" value="affirm" type="radio">
+                            <label for="checkbox1"><img class="affirm accepted" src="https://dev4.ipdusa.com/skin/images/affirm_logo.png"></label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="ch4_formButtonRow small-12 medium-10 columns medium-centered">
+                            <input class="button info" type="submit" name="paymentSubmit" value="Next Step">
+                        </div><!--/.ch4_formButtonRow-->
+                    </div><!--/.row-->
+                </div><!--/#ch4_checkoutPaymentForm-->
+            </div><!--/#ch4_checkoutItems-->
+        </form>
+        <div class="ch4_checkoutHeadingClosed ch4_uppercase">2. SHIPPING</div>
+        <div class="ch4_checkoutHeadingClosed ch4_uppercase">3. ORDER REVIEW</div>
+    </div>
+    <!--/.ch4_checkout-->
+    <div class="small-12 medium-3 columns">
+        <div class="order-summary">
+            <div class="header">Summary</div>
+            <div class="summary-row promo-total" id="promotioncode">
+                Subtotal:
+                <span class="right text-right">$169.95</span>
+            </div>
+
+            <div class="summary-row promo-total" id="promotioncode">
+                Discount:
+                <span class="right text-right">$0.00</span>
+            </div>
+            <div class="summary-row promo-message" id="promotionerror" style="display:none;">
+                <span class="text-center">Promotion code is invalid or expired</span>
+            </div>
+            <script>
+                $('#addPromo').click(function () { $('#enterPromo').toggle(); });
+            </script>
+
+            <div class="summary-row shipping-total" id="estShipping">
+                Estimated Shipping:
+                <span class="right text-right">$0.00</span>
+            </div>
+
+            <div class="summary-row summary-total" id="total">
+                Total:
+                <span class="right text-right">$169.95</span>
+            </div>
+            <div class="summary-row" id="checkout">
+                <a class="cartbutton checkout button info" href="/validate_cart.asp">Checkout</a>
+            </div>
+
+        </div>
+
+        <div class="show-for-medium" id="ch4_summaryMessage">
+            <span class="ch4_summaryMessageTitle">FREE SHIPPING</span>
+            <span class="ch4_summaryMessageTextBody">Spend $175.00 more and get free shipping. *Exclusions apply. <a href="faq.asp?faq_id=1">Shipping FAQ</a></span>
+        </div>
+        <div class="show-for-medium" id="ch4_summaryHelp">
+            <div class="ch4_helpTitle ch4_uppercase">NEED HELP?</div>
+            <ul class="ch4_helpList">
+                <li>
+                    <a href="#" name="order_secure" data-linkname="need help:order_secure" class="ch4_helpTip">
+                    </a><a href="javascript:void(0)" onclick="ToggleElement('faq_14');">How do I contact IPD?</a>
+                    <div id="faq_14" class="ch4_toolTip ch4_toolTipText" style="display: none;">
+                        <div class="ch4_toolTipArrow"></div>
+                        <p><strong>Call Us:</strong></p>
+                        <p>800-444-6473| 503-257-7500</p>
+                        <p><strong>Email Us:</strong></p>
+                        <p><a href="javascript:location.href='mailto:'+String.fromCharCode(115,97,108,101,115,64,105,112,100,117,115,97,46,99,111,109)+'?subject=Customer%20Support'">sales@ipdusa.com</a></p>
+                        <p><strong>Buisiness Hours:</strong></p>
+                        <p>M-F 8:30 AM - 5:00 PM</p>
+
+                    </div>
+
+                </li>
+                <li>
+                    <a href="#" name="order_secure" data-linkname="need help:order_secure" class="ch4_helpTip">
+                    </a><a href="javascript:void(0)" onclick="ToggleElement('faq_17');">What payment methods can I use?</a>
+                    <div id="faq_17" class="ch4_toolTip ch4_toolTipText" style="display: none;">
+                        <div class="ch4_toolTipArrow"></div>
+                        <p>We accept: Visa, MasterCard, Discover, American Express and Paypal.</p>
+                        <a href="faq.asp?faq_id=17" target="_blank">more.</a>
+
+                    </div>
+
+                </li>
+                <li>
+                    <a href="#" name="order_secure" data-linkname="need help:order_secure" class="ch4_helpTip">
+                    </a><a href="javascript:void(0)" onclick="ToggleElement('faq_10');">When will I be charged?</a>
+                    <div id="faq_10" class="ch4_toolTip ch4_toolTipText" style="display: none;">
+                        <div class="ch4_toolTipArrow"></div>
+                        <p>We authorize your card for the stock we have available at the time of order entry. Typically, back
+                            orders are not authorized until the stock becomes available. In some cases the entire order gets
+                            authorized.
+                        </p>
+                        <a href="faq.asp?faq_id=10" target="_blank">more.</a>
+
+                    </div>
+
+                </li>
+                <li>
+                    <a href="#" name="order_secure" data-linkname="need help:order_secure" class="ch4_helpTip">
+                    </a><a href="javascript:void(0)" onclick="ToggleElement('faq_2');">Can I return an item?</a>
+                    <div id="faq_2" class="ch4_toolTip ch4_toolTipText" style="display: none;">
+                        <div class="ch4_toolTipArrow"></div>
+                        <p>We guarantee your complete satisfaction or you can return the product within 90 days*.</p>
+                        <p>We guarantee your complete satisfaction or you can return the product within 90 days*.</p>
+                        <a href="faq.asp?faq_id=2" target="_blank">more.</a>
+
+                    </div>
+
+                </li>
+            </ul>
+            <a href="faq.asp" class="ch4_moreHelp" target="_blank" data-linkname="need help:more help">More help</a>
+        </div>
+
+    </div>
+    <!--/.order_summary-->
+</div>
+ <!--/.row-->

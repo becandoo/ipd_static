@@ -1,0 +1,47 @@
+.filterdetails {
+    .button{
+        text-transform: lowercase;
+    }
+    nav {
+        ul {
+            list-style-type: none;
+            text-align: center;
+            &.vehiclefilter {
+                li {
+                    &:first-child{
+                        font-size: 2rem;
+                    }
+                    &:nth-child(2){
+                        font-size: 1.5rem;
+                    }
+                    span {
+                        margin-right: 10px;                  
+                    }
+                }
+            }
+            li {
+                a {
+                    margin-right: 10px;
+                    i {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.vehiclefilter{
+    li {
+
+        span[title]{
+            font-weight: normal;
+        }
+        span{
+            font-weight: bold;
+            &::not(span[title]){
+                font-weight: bold;
+            }
+        }
+    }
+}

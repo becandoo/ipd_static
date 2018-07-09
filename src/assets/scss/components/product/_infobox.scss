@@ -1,0 +1,60 @@
+
+/*infobox*/
+div.infobox {  
+        clear:both; display:block; overflow:hidden; margin:10px 0 10px 0; padding:0; font-size:16px;
+        .callout{
+                &.info-success{
+                        h5{
+                                i {
+                                        font-size: 1rem;
+                                        background: #73a32d;
+                                        color: white !important;
+                                        border-radius: 50%;
+                                        padding: 2px 4px;
+                                        margin-right: 4px;
+                                }
+                        }
+                }
+                &.info-error{
+                        h5{
+                                i {
+                                        font-size: 1rem;
+                                        background: #db1131 !important;
+                                        color: white !important;
+                                        border-radius: 50%;
+                                        padding: 4px 10px;
+                                }
+                        }
+                }
+                &.info-warning{
+                        h3{
+                                i {
+        
+                                        color: #fea238 !important;
+                                }
+                        }
+                }
+        }
+}
+div.infobox a.button {  margin-right: 5px; }
+div.infobox div.info-content { display:block; overflow:hidden; min-height:45px; background-repeat: no-repeat; }
+div.infobox div.info-content div.vehicle { 
+        clear:left; 
+                span {
+                        font-weight: bold;
+                }
+        }
+div.infobox div.info-content span { display:inline; overflow:hidden; margin-right:7px;  }
+div.infobox div.info-content span.caption {  padding-bottom:5px;}
+div.infobox div.info-content div.buttons { clear:left; margin-top: 15px;}
+
+.info-content {
+        h5, h4 { display: inline;}
+}
+
+table.validation {
+        border: 0;
+        tbody {
+                border: 0;
+        }
+}

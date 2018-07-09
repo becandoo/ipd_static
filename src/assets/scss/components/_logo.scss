@@ -1,0 +1,20 @@
+.logo svg, .other-logo svg {
+    width: 200px;
+    height: 40px;
+    margin: 2px 0;
+}
+
+.logo {
+    .svg1 {
+        fill: #2e6db0 !important;
+        stroke: #444 !important;  
+        
+    }
+    .svg2 {
+        fill: #decf28 !important;
+    }
+    path {
+        stroke: #444 !important;  
+        stroke-width: 70 !important; 
+    }
+}

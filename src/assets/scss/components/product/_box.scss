@@ -1,0 +1,97 @@
+.products {
+    .resultsbox {
+        h4 {
+            padding: 5px;
+            margin: 10px 5px 5px 5px;
+            background-color: #EEEEEE;
+            clear: both;
+        }
+    }
+    .product-card {
+        background-color: $white;
+        border: 1px solid darken($light-gray, 13%);
+        padding: 1rem;
+        margin-bottom: 1.5rem;
+        position: relative;
+        .product-card-thumbnail {
+            display: block;
+            position: relative;
+            img {
+                display: block;
+                margin: 0 auto;
+            }
+        }
+        .product-card-title {
+            font-family: 'Open sans', sans-serif;
+            font-size: 1.2rem;
+            line-height: 1.45rem;
+            margin-top: 1rem;
+            margin-bottom: 0;
+            overflow: hidden;
+            text-align: center;
+            a {
+                color: darken($dark-gray, 15%);
+            }
+        }
+        .product-card-pricing {
+            text-align: center;
+        }
+        .product-card-price {
+            color: darken($dark-gray, 30%);
+            display: block;
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-top: 0.8rem;
+            text-align: center;
+        }
+        .product-card-sale {
+            color: $dark-gray;
+            display: block;
+            font-size: 1.1rem;
+            margin-left: 0.3rem;
+            text-decoration: line-through;
+            text-align: center;
+        }
+        .exclusive {
+            display: block;
+            overflow: hidden;
+            padding: 0;
+            width: 80px;
+            height: 21px;
+            background: url("/skin/images/exclusivetag.gif") no-repeat scroll 0 0 transparent;
+            position: absolute;
+            top: 5px;
+            right: 20px;
+        }
+        .product-card-thumbnails {
+            display: block;
+            float: left;
+        }
+        .product-card-color-option {
+            display: inline-block;
+            height: 25px;
+            width: 25px;
+        }
+    }
+}
+
+.cd-add-to-cart {
+    display: inline-block;
+    padding: 1.2em 1.8em;
+    background: #2c97de;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 700;
+    letter-spacing: .1em;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    -webkit-transition: all .2s;
+    transition: all .2s;
+  }
+  .cd-add-to-cart:hover {
+    background: #42a2e1;
+  }
+  .cd-add-to-cart:active {
+    -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+            transform: scale(0.9);
+  }

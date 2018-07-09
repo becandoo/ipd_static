@@ -1,13 +1,23 @@
 /*vehicle selector*/
-#vehicleselector { background: #1e232c; overflow:hidden; border-top:1px solid #2a70a6; border-width: 12px; padding:8px; left:16px; /*top;0;*/  z-index:10;}
+
+#vehicleselector {
+    background: darken(#393e41, 5%);
+    overflow: hidden;
+    border-top: 1px solid #2a70a6;
+    border-width: 8px;
+    padding: 9px;
+    left: 16px;
+    /*top;0;*/
+    z-index: 10;
+}
 
 #vehicleselector {
     .caption {
-    color: $white !important;
-}
-    select{
+        color: $white !important;
+    }
+    select {
         margin: 0 0 0.6rem;
-        border-radius: 20px;
+        border-radius: 500px;
     }
     .button {
         margin: 0;
@@ -17,7 +27,7 @@
             font-size: 95%;
             border-radius: 20px;
             float: right;
-         }
+        }
     }
 }
 
@@ -30,39 +40,30 @@
     }
 }
 
+
 /*vehicle selector*/
+
 #vselector {
-    background: #1e232c;
-    //background: darken(#004499, 10%);
-        padding: 10px;
-    
-    border-top:8px solid #457B9D;
-
-}
-
+    background: #393E41; //background: darken(#004499, 10%);
+    padding: 10px;
+    border-top: 8px solid #e9ce47;
 .caption {
     color: $white;
 }
+}
+
 
 .vehicle-selector {
-    .button.warning{
+    .button.warning {
         color: black;
     }
 }
 
+
 /* Small only */
+
 @media screen and (max-width: 39.9375em) {
-        #vehicleselector {
-            margin-bottom: 20px;
+    #vehicleselector {
+        margin-bottom: 20px;
     }
 }
-
-//notes
-//1. removed position: absolute; border-radius:3px; width:192px; from #vehicleselector {}
-//2. removed position: absolute; width:658px; right:30px; from #vs-narrative {}
-//3. removed  margin-bottom:20px; height:300px; from #vs-container {}
-//4. removed  #vehicleselector select.current { background-color:#ffff99; }
-//5. removed the following :
-    //#vehicleselector div.buttons { margin-top:5px; }
-    //#vehicleselector div.buttons button { margin:0; }
-    //#vehicleselector div.caption, #vehicleselector div.buttons { text-align:center; }

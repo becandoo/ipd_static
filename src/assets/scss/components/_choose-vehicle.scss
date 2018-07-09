@@ -1,12 +1,8 @@
 .choosevehicle { display:block; overflow:hidden; padding-bottom:20px;}
 .choosevehicle p.disclaimer { font-weight:bold; }
 
-#vehiclebrowser { display:block; overflow:hidden;padding:0 0 10px 0; margin:0px 0px 0px 0px; border-spacing:0; }
 #vehiclebrowser td { padding:1px 10px 2px 1px; text-align:left; vertical-align:middle; }
 #vehiclebrowser td.caption { white-space:nowrap; } 
-#vehiclebrowser td.dropdown { width:500px; } 
-#vehiclebrowser td.help {color:#666666; width: 100%; } 
-#vehiclebrowser td select { width:450px; }
 #vehiclebrowser span.question { font-weight:bold; }
 #vehiclebrowser span.answer { float:left; clear:both; font-weight:normal; font-size:12px;margin:2px 0 0 20px;}
 #vehiclebrowser span.disclaimer { float:left; clear:both; font-weight:normal; font-size:10px; margin:2px 0 0 20px;}
@@ -22,6 +18,7 @@ table {
               border: 0 !important;
             tr{
                 background: white !important;
+                border: 0 !important;
             }
         }
     }

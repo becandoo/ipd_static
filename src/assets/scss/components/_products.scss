@@ -38,7 +38,7 @@ div.products div.box2 a { color:$black; }
 div.products div.box2 img { display:block; border:0; margin:0 auto; }
 div.products div.box2 span { display:block; overflow:hidden; text-align:center; left:5px; top:160px; }
 div.products div.box2 span.saletag { display:block;  white-space:nowrap; overflow:hidden; text-align:center; padding:0;  font-weight:bold; font-size:14px;  left:0; width:100%; top:0; color:#ff0000; opacity:.8;  }
-div.products div.box2 span.exclusive { display:block;  overflow:hidden; padding:0; left:5px; width:80px; top:135px; height:21px; background: url("https://dev4.ipdusa.com/skin/images/exclusivetag.gif") no-repeat scroll 0 0 transparent; }
+div.products div.box2 span.exclusive { display:block;  overflow:hidden; padding:0; left:5px; width:80px; top:135px; height:21px; background: url("/skin/images/exclusivetag.gif") no-repeat scroll 0 0 transparent; }
 div.products div.box2 span.closeout { display:block; position:absolute; overflow:hidden; padding:0; left:135px; width:70px; top:64px; height:91px; background: url("/skin/images/closeouttag.gif") no-repeat scroll 0 0 transparent; }
 
 div.products div.centerbar { display:block; overflow:hidden; clear:both; padding:5px; width:645px; margin:5px; background-color:#eeeeee; font-size:10px; border:1px solid #909090; }
@@ -69,6 +69,27 @@ span.price {
     }
 }
 
+.cd-add-to-cart {
+    display: inline-block;
+    padding: 1.2em 1.8em;
+    background: #2c97de;
+    border-radius: 50em;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 700;
+    letter-spacing: .1em;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    -webkit-transition: all .2s;
+    transition: all .2s;
+  }
+  .cd-add-to-cart:hover {
+    background: #42a2e1;
+  }
+  .cd-add-to-cart:active {
+    -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+            transform: scale(0.9);
+  }
 /* Small only */
 @media screen and (max-width: 39.9375em) {
 div.products div.box2 { margin-bottom: 20px;}

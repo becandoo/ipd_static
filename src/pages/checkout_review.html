@@ -1,0 +1,360 @@
+<div class="row">
+<div class="small-12 columns">
+<div class="errors">
+<strong>The following problems occurred:</strong>
+<ol><li>The <label for="C_Card_Type">Card Type</label> was not selected.</li>
+<li><label for="C_Card_Number">Card Number</label> is blank.</li>
+<li>The <label for="numCardExpiryMonth">Expiration Date</label> has expired - Please check you entered the correct expiration date.</li>
+<li><label for="C_Card_SecurityNumber">CVV Security Code</label> is blank.</li>
+</ol></div></div></div>
+
+<div class="row">
+    <div class="small-12 medium-9 columns">
+        <div class="ch4_checkout">
+            <div id="ch4_reviewContentMessage" class="ch4_contentItems show-for-medium">
+                <div class="ch4_checkoutHeading ch4_uppercase">
+                    IS ALL YOUR INFORMATION CORRECT?
+                </div>
+                <div class="ch4_reviewContainer">
+                    Before you place your order, please take a moment to review your shipping information, billing information, and cart summary.
+                </div>
+            </div>
+            <div id="ch4_shippingReview" class="ch4_contentItems ch4_html">
+                <div class="ch4_checkoutHeading ch4_uppercase ch4-font-1">
+                    <span class="ch4_checkMark"><i class="zmdi zmdi-check text success"></i></span>SHIPPING
+                    <div class="ch4_editButtonRt">
+                        <form method="post" action="checkout.asp">
+                            <input type="hidden" name="s" value="Y6hvky23044660">
+                            <input type="hidden" name="numStep" value="3">
+                            <input type="hidden" name="strPaymentSystem" value="gwlocal">
+                            <input type="hidden" name="C_EmailAddress" value="jsbertu221@gmail.com">
+                            <input type="hidden" name="C_Password" value="Turell2010">
+                            <input type="hidden" name="C_CardholderName" id="C_CardholderName" value="JAMES BERGELSEN">
+                            <input type="hidden" name="C_CardholderCompany" id="C_CardholderCompany" value="">
+                            <input type="hidden" name="C_CardholderStreetAddress" id="C_CardholderStreetAddress" value="541 NE ROBERTS AVENUE">
+                            <input type="hidden" name="C_CardholderTownCity" id="C_CardholderTownCity" value="GRESHAM">
+                            <input type="hidden" name="C_CardholderCounty" id="C_CardholderCounty" value="OR">
+                            <input type="hidden" name="C_CardholderPostCode" id="C_CardholderPostCode" value="97030">
+                            <input type="hidden" name="C_ShippingPostCode" id="C_ShippingPostCode" value="97030">
+                            <input type="hidden" name="C_CardholderCountry" id="C_CardholderCountry" value="201">
+                            <input type="hidden" name="C_Telephone" id="C_Telephone" value="5037074295">
+                            <input type="hidden" name="numShipMethod" id="numShipMethod" value="19">
+                            <input type="hidden" name="shipToBillAdd" id="shipToBillAdd" value="on">
+                            <input id="ch4_editShipping" name="submitBack" type="submit" value="Edit" class="ch4_btn ch4_btnSm ch4_btnEdit ch4-font-1 ch4_btnGray">
+                        </form>
+                    </div>
+                </div>
+
+                <div class="ch4_reviewContainer">
+                    <div class="ch4_shippingSection">
+                        <h6>Shipping Information</h6>
+                        JAMES BERGELSEN
+                        <br> 541 NE ROBERTS AVENUE
+                        <br> GRESHAM, OR - 97030
+                    </div>
+                    <hr class="hide-for-large">
+                    <div class="ch4_shippingSection">
+
+                        <div class="shipping-row">
+                            <div class="btn-selectedshippingoption selected">
+                                <div class="row">
+                                    <div class="small-12 medium-10 column">
+
+                                        <i class="zmdi zmdi-local-store"></i>
+
+                                        <h5>Customer Pickup at PORTLAND Warehouse</h5>
+                                    </div>
+                                    <div class="small-12 medium-2 column">
+
+                                        <span class="price"><a href="https://goo.gl/maps/YP7SJQoZeCR2" target="blank" class="button alert hollow" style="border: 1px solid #8b8b8b; border-radius: 50px; padding: 0.45rem .7rem; margin:0;"><i class="zmdi zmdi-pin" style="margin:0;"></i></a></span>
+
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="small-12 columns">
+                                        <p class="description">Pick up your merchandise at our warehouse in Portland Oregon. (DOES NOT SHIP!)</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div id="ch4_billingReview" class="ch4_contentItems ch4_html">
+                <div class="ch4_checkoutHeading ch4_uppercase ch4-font-1">
+                    <span class="ch4_checkMark"></span> PAYMENT
+                    <div class="ch4_editButtonRt">
+                        <form method="post" action="checkout.asp">
+                            <input type="hidden" name="s" value="Y6hvky23044660">
+                            <input type="hidden" name="numStep" value="">
+                            <input type="hidden" name="C_EmailAddress" value="jsbertu221@gmail.com">
+                            <input type="hidden" name="C_Password" value="Turell2010">
+                            <input type="hidden" name="C_CardholderName" id="C_CardholderName" value="JAMES BERGELSEN">
+                            <input type="hidden" name="C_ShippingPostCode" id="C_ShippingPostCode" value="97030">
+
+                        </form>
+                    </div>
+                </div>
+                <form id="reviewForm" action="checkout.asp" method="post">
+                    <div class="ch4_reviewContainer">
+                        <div class="ch4_paymentSection">
+                            <div class="row">
+                                <div class="ch4_billingInfoSection small-12 medium-4 columns">
+                                    <h6>Billing Information</h6>
+                                    JAMES BERGELSEN
+                                    <br> 541 NE ROBERTS AVENUE
+                                    <br> GRESHAM, OR - 97030
+                                    <br> jsbertu221@gmail.com
+                                    <br>
+                                    <br>
+                                                     <h6>Payment Type</h6>
+                                    <img class="cards accepted" src="https://dev4.ipdusa.com/skin/images/acceptedcreditcards.jpg">
+                                </div>
+                                <!--/.ch4_billingInfoSection-->
+          
+                                <div class="small-12 medium-8 columns">                   
+                              
+                                    <div class="ch4_cardFields">
+                                        <label for="C_CardholderName">Cardholder's Name*</label>
+                                        <input type="text" name="C_CardholderName" id="C_CardholderName" value="JAMES BERGELSEN" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAfBJREFUWAntVk1OwkAUZkoDKza4Utm61iP0AqyIDXahN2BjwiHYGU+gizap4QDuegWN7lyCbMSlCQjU7yO0TOlAi6GwgJc0fT/fzPfmzet0crmD7HsFBAvQbrcrw+Gw5fu+AfOYvgylJ4TwCoVCs1ardYTruqfj8fgV5OUMSVVT93VdP9dAzpVvm5wJHZFbg2LQ2pEYOlZ/oiDvwNcsFoseY4PBwMCrhaeCJyKWZU37KOJcYdi27QdhcuuBIb073BvTNL8ln4NeeR6NRi/wxZKQcGurQs5oNhqLshzVTMBewW/LMU3TTNlO0ieTiStjYhUIyi6DAp0xbEdgTt+LE0aCKQw24U4llsCs4ZRJrYopB6RwqnpA1YQ5NGFZ1YQ41Z5S8IQQdP5laEBRJcD4Vj5DEsW2gE6s6g3d/YP/g+BDnT7GNi2qCjTwGd6riBzHaaCEd3Js01vwCPIbmWBRx1nwAN/1ov+/drgFWIlfKpVukyYihtgkXNp4mABK+1GtVr+SBhJDbBIubVw+Cd/TDgKO2DPiN3YUo6y/nDCNEIsqTKH1en2tcwA9FKEItyDi3aIh8Gl1sRrVnSDzNFDJT1bAy5xpOYGn5fP5JuL95ZjMIn1ya7j5dPGfv0A5eAnpZUY3n5jXcoec5J67D9q+VuAPM47D3XaSeL4AAAAASUVORK5CYII=&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;">
+                                        <div class="row">
+                                            <div class="small-9 columns">
+                                                <label for="C_Card_Number">Card Number*</label>
+                                                <input type="text" name="C_Card_Number" id="C_Card_Number" value="">
+                                            </div>
+                                            <div class="small-3 columns">
+                                                <label for="C_Card_Type">Card Type*</label>
+                                                <select name="C_Card_Type" id="C_Card_Type" size="1">
+<option value="none">-</option>
+<option value="Visa">Visa</option>
+<option value="Mastercard">Mastercard</option>
+<option value="American Express">American Express</option>
+<option value="Discover">Discover</option>
+</select>
+                                            </div>
+                                        </div>
+                                        <!--/.row-->
+                                        <div class="row">
+                                            <div class="small-4 columns">
+                                                <label for="C_ShippingPostCode">CVV Security Code*</label>
+                                                <input type="text" name="C_Card_SecurityNumber" id="C_Card_SecurityNumber" value="">
+                                            </div>
+                                            <div class="small-4 columns">
+                                                <label for="C_ShippingPostCode">Expiry Month*</label>
+                                                <select name="numCardExpiryMonth" id="numCardExpiryMonth">
+                                            
+                                            <option value="01">01</option>
+                                            
+                                            <option value="02">02</option>
+                                            
+                                            <option value="03">03</option>
+                                            
+                                            <option value="04">04</option>
+                                            
+                                            <option value="05">05</option>
+                                            
+                                            <option value="06">06</option>
+                                            
+                                            <option value="07">07</option>
+                                            
+                                            <option value="08">08</option>
+                                            
+                                            <option value="09">09</option>
+                                            
+                                            <option value="10">10</option>
+                                            
+                                            <option value="11">11</option>
+                                            
+                                            <option value="12">12</option>
+                                            
+                                        </select>
+                                            </div>
+                                            <div class="small-4 columns">
+                                                <label for="C_ShippingPostCode">Expiry Year*</label>
+                                                <select name="numCardExpiryYear">
+                                            
+                                            <option value="2017">2017</option>
+                                            
+                                            <option value="2018">2018</option>
+                                            
+                                            <option value="2019">2019</option>
+                                            
+                                            <option value="2020">2020</option>
+                                            
+                                            <option value="2021">2021</option>
+                                            
+                                            <option value="2022">2022</option>
+                                            
+                                            <option value="2023">2023</option>
+                                            
+                                            <option value="2024">2024</option>
+                                            
+                                            <option value="2025">2025</option>
+                                            
+                                            <option value="2026">2026</option>
+                                            
+                                            <option value="2027">2027</option>
+                                            
+                                            <option value="2028">2028</option>
+                                            
+                                            <option value="2029">2029</option>
+                                            
+                                        </select>
+                                            </div>
+                                        </div>
+                                        <!--/.row-->
+                                    </div>
+                                    <!--/.ch4_cardFields-->
+
+                                </div>
+                                <!--/.ch4_takeCardSection-->
+                            </div>
+                            <!--/.row-->
+                        </div>
+                    </div>
+
+                    <div id="ch4_checkoutItems">
+                        <div id="ch4_checkoutHeadingOpen" class="ch4_uppercase">
+                            3. REVIEW AND SUBMIT YOUR ORDER
+                        </div>
+                        <div id="ch4_checkoutReviewForm">
+                            <p class="ch4_reviewText">
+                                By clicking the 'Place Order' button, you confirm that you have read, understood, and accept our
+                                <a target="_blank" href="https://www.ipdusa.com/blogs/365/terms-and-conditions">Terms and Conditions</a>,
+                                <a target="_blank" href="https://www.ipdusa.com/faq.asp?FAQ_ID=2">Returns Policy</a>, and
+                                <a target="_blank" href="https://www.ipdusa.com/blogs/365/terms-and-conditions">Privacy Policy</a>.
+                            </p>
+                            <div class="ch4_reviewBtnBotRt marginBottom">
+                                <input type="hidden" name="s" value="Y6hvky23044660">
+                                <input type="hidden" name="blnBypassGateway" value="">
+                                <input type="hidden" name="numStep" value="4">
+                                <input type="hidden" name="C_EmailAddress" value="jsbertu221@gmail.com">
+                                <input type="hidden" name="C_Password" value="Turell2010">
+                                <input type="hidden" name="C_CardholderCountry" value="201">
+                                <input type="hidden" name="C_ShippingCountry" value="201">
+                                <input type="hidden" name="C_ShippingPostCode" value="97030">
+                                <input type="hidden" name="strPaymentSystem" value="gwlocal">
+                                <input type="hidden" name="numShipMethod" value="19">
+                                <input type="hidden" name="C_CardholderEUVatNum" value="">
+                                <input type="hidden" name="C_CardholderStreetAddress" value="541 NE ROBERTS AVENUE" id="C_CardholderStreetAddress">
+                                <input type="hidden" name="C_CardholderTownCity" value="GRESHAM" id="C_CardholderTownCity">
+                                <input type="hidden" name="C_CardholderCounty" value="OR" id="C_CardholderCounty">
+                                <input type="hidden" name="C_CardholderPostCode" value="97030" id="C_CardholderPostCode">
+                                <input type="hidden" name="C_ShippingName" value="JAMES BERGELSEN" id="C_ShippingName">
+                                <input type="hidden" name="C_ShippingCompany" value="" id="C_ShippingCompany">
+                                <input type="hidden" name="C_ShippingStreetAddress" value="541 NE ROBERTS AVENUE" id="C_ShippingStreetAddress">
+                                <input type="hidden" name="C_ShippingTownCity" value="GRESHAM" id="C_ShippingTownCity">
+                                <input type="hidden" name="C_ShippingCounty" value="OR" id="C_ShippingCounty">
+                                <input type="hidden" name="C_Telephone" id="C_Telephone" value="5037074295">
+                                <input type="hidden" name="C_Telephone2" id="C_Telephone2" value="">
+
+                                <textarea style="display: none;" name="strCustomerComments" cols="60" rows="3"></textarea>
+                                <input class="submit" type="submit" name="submitforward" style="position: absolute; width: 0; height: 0; background-color: Transparent; border: none;"
+                                    value="">
+                                <input type="hidden" name="C_RFT_ID" value="36">
+
+                                <div id="reviewButtonTopPaypal" class="ch4_btnPlaceOrder">
+                                    <div id="reviewButtonTopPaypal" class="ch4_btnPlaceOrder">
+
+                                        <p class="left">
+                                            <input class="btn-placeorder" type="submit" name="submitforward" id="submitforward" value="Submit this Order">
+                                        </p>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <!--#ch4_billingReview-->
+        </div>
+        <!--/.ch4_checkout-->
+
+    </div>
+    <!--/.small-12.medium-9.columns-->
+
+    <div class="small-12 medium-3 columns">
+        <div class="order-summary">
+            <div class="header">
+                Summary
+                <div class="editCartButton">
+                    <input name="edit" type="button" onclick="location.href='basket.asp'" class="ch4_btn ch4_btnSm ch4_btnEdit" value="Edit">
+                </div>
+            </div>
+            <div class="summary-row promo-total" id="promotioncode">
+                Subtotal:
+                <span class="right text-right">
+                            
+$169.95
+                        </span>
+            </div>
+
+            <div class="summary-row promo-total" id="promotioncode">
+                Promotional Discount:
+                <span class="right text-right">$0.00</span>
+            </div>
+
+            <div class="summary-row shipping-total">
+                Shipping:
+                <span id="shippingAmt" class="right text-right">$0.00</span>
+
+            </div>
+
+            <div class="summary-row summary-total">
+                Total:
+                <span class="right text-right">
+                                
+$169.95</span>
+            </div>
+
+            <!--<div class="summary-row" id="checkout">
+                                <a class="cartbutton checkout button info" href="/basket.asp">Edit Cart</a>
+                            </div>-->
+
+        </div>
+        <div class="items ch4_checkoutItems">
+            <div class="header">Your Items</div>
+            <ul class="bordered">
+                <li>
+                    <div class="ch4_cartItem checkoutItems">
+                        <div class="ch4_cartItemImg">
+                            <a href="product.asp?s=Y6hvky23044660&amp;P_ID=12124&amp;V_ID=18460&amp;strPageHistory=basket"><img alt="" style="" src="/uploads/images_products_slideshow/thumbnail_33188.jpg">
+                            </a></div><a href="product.asp?s=Y6hvky23044660&amp;P_ID=12124&amp;V_ID=18460&amp;strPageHistory=basket">
+                            </a>
+                        <div class="ch4_cartItemContent">
+                            <a href="product.asp?s=Y6hvky23044660&amp;P_ID=12124&amp;V_ID=18460&amp;strPageHistory=basket">
+                                <div class="ch4_cartItemPricing">
+                                    <input class="unitPrice margin-0" id="unitPrice" type="text" value="$169.95" size="3" style="display: none;">
+                                    <p class="ch4_cartItemPrice margin-0">$169.95</p>
+                                </div>
+                            </a>
+                            <div class="ch4_cartItemOptionsContainer"><a href="product.asp?s=Y6hvky23044660&amp;P_ID=12124&amp;V_ID=18460&amp;strPageHistory=basket">
+                                    <input type="text" id="productName" class="productName" value="125529 Eros Wheel - 17 Inch Silver" style="display: none;">
+                                    </a>
+                                <p class="ch4_cartItemTitle"><a href="product.asp?s=Y6hvky23044660&amp;P_ID=12124&amp;V_ID=18460&amp;strPageHistory=basket">
+                                        </a><a href="product.asp?s=Y6hvky23044660&amp;P_ID=12124&amp;V_ID=18460&amp;strPageHistory=basket"> Eros Wheel - 17 Inch Silver</a>
+                                    <span class="ch4_cartItemDescription"></span>
+                                </p>
+                                <p class="ch4_cartItemOptions">
+                                    <span class="ch4_cartItemOption Qty"><span class="ch4_cartItemLabel">Qty:</span>1
+                                    </span>
+                                    <span class="ch4_cartItemOption"><span class="ch4_cartItemLabel">Status:</span>&nbsp;
+                                    <span class="text success">SHIPPABLE</span>
+                                    </span>
+                                </p>
+                            </div>
+                            <div class="ch4_cartItemActions ch4_lgRes">
+
+                            </div>
+                        </div>
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

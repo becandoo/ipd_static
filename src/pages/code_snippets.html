@@ -1,0 +1,123 @@
+<script type="text/javascript">
+    $(document).ready(function() {
+        $("#showBillingInfo").on("click", function (e) {
+            $.ajax({
+                type: "POST",  
+                url: "ajax_get_billing_info.asp",
+                contentType: "application/json; charset=utf-8",
+                dataType: "json", // dataType is json format
+                success: function (data) {
+                    
+                    var responseJson = data;
+                    var prettyJson = JSON.stringify(responseJson, null, 4);
+                    var id = data.customer_id;
+                    var name = data.customer_name;
+                    console.log(id);
+                    console.log(name);
+                    console.log(prettyJson);
+                    $('#billingId').html(id);
+                    $('#billingName').html(name);
+
+                    // Define customer object
+                    var customer = {
+                        "billing": [{
+                            "customer_id": id,
+                            "customer_name": name
+                        }],
+                    };
+                    
+                    console.log(customer.billing);
+                    console.log(x);
+                    //console.log(customer.billing[0].customer_id);
+                }
+            });
+            
+        });
+    });
+
+
+</script>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        getBillingDetails();
+    });
+
+    function getBillingDetails() {
+        $.ajax({
+            type: "POST",
+            url: "ajax_get_billing_info.asp",
+            contentType: "application/json; charset=utf-8",
+            dataType: "json", // dataType is json format
+            success: function (data) {
+
+                var id = data.c_id;
+                var name = data.c_name;
+
+                var customer = {
+                    "billing": [{
+                        "customer_id": id,
+                        "customer_name": name
+                    }],
+                };
+               
+                var items = customer.billing;
+                var fragment = "";
+
+                $.each(items, function (index, val) {
+
+                    var id = val.customer_id;
+                    var name = val.customer_name;
+
+                });
+                
+                $('#billingInfo').append(fragment);
+                // Define customer object
+
+            }
+        });
+    }
+
+
+    function getShippingMethods() {
+        $.ajax({
+            type: "POST",
+            url: "ajax_get_shipping_methods.asp",
+            contentType: "application/json; charset=utf-8",
+            dataType: "json", // dataType is json format
+            success: function (response) {
+                console.log(response);
+                var x = $.isArray(response);
+                console.log(x);
+                var methods = response;
+                var shipping = [];
+                $.each(methods, function (index, val) {
+                    var name = val.name;
+                    var description = val.description;
+                    var price = val.price;
+                    console.log(name + ' ' + description + ' ' + price);
+                    // create shipping object
+                    shipping = {
+                        "method": [{
+                            "name": name,
+                            "description": description,
+                            "price": price
+                        }],
+                    }; 
+                });
+            }
+        });
+    }
+</script>
+
+vb
+      'declare array of names and values
+        arrayVal = Array(DISPLAY_VALUE)
+        arrayDesc = Array(AT_DESC)
+        
+          
+        for each x in arrayVal
+            for each y in arrayDesc
+                    strProductStats = strProductStats & attrCounter ^y & ":<br>" & x & "<br>"
+            next           
+        next

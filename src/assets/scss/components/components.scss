@@ -24,16 +24,18 @@
 /*global*/
 @import 'global.scss';
 
+@import 'responsive.scss';
+
 /*buttons*/
 @import 'buttons.scss';
 
+/*logo*/
+@import '_logo.scss';
+
 /*header*/
-@import 'header/headertopbar.scss';
-@import 'header/header.scss';
-@import 'header/header4.scss';
-@import 'header/menu.scss';
-@import 'header/search.scss';
-@import 'header/shop-by-model.scss';
+@import 'header/_top-bar.scss';
+@import 'header/_middle-bar.scss';
+@import 'header/_bottom-bar.scss';
 
 /*trust elements*/
 @import 'trustedelements.scss';
@@ -60,14 +62,19 @@
 @import 'homepage.scss';
 
 /*shopping*/
-@import 'shopping/narrow-results.scss';
-@import 'shopping/shopping.scss';
+@import 'shopping/filter';
+@import 'shopping/categories';
+@import 'shopping/shop-by-car';
+@import 'shopping/search-results';
+@import 'shopping/paging';
+@import 'shopping/breadcrumbs';
+@import 'shopping/shop-by-model-family.scss';
 
-/*products*/
-@import 'products.scss';
-@import 'products/product-header.scss';
-@import 'products/infobox.scss';
-@import 'products/product-tabs.scss';
+/*product*/
+@import 'product/box';
+@import 'product/product-header.scss';
+@import 'product/infobox.scss';
+@import 'product/product-tabs.scss';
 
 /*promotions*/
 @import 'promotions.scss';
@@ -109,3 +116,10 @@
 
 /*test*/
 @import 'test.scss';
+
+@import 'resto-info.scss';
+
+@import 'kit-builder';
+
+@import 'legacy.scss';
+

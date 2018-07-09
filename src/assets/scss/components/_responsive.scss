@@ -1,0 +1,246 @@
+/*
+All responsive styles will be moved into this document.
+Here are the responsive media queries to be used:
+
+// Small only
+@media screen and (max-width: 39.9375em) {}
+
+// Medium and up
+@media screen and (min-width: 40em) {}
+
+// Medium only
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {}
+
+// Large and up
+@media screen and (min-width: 64em) {}
+
+// Large only
+@media screen and (min-width: 64em) and (max-width: 74.9375em) {}
+
+*/
+
+//document outline.
+// 1. global
+// 2. mobile-top-bar
+// 3. mobile-search
+
+/*1. global*/
+.no-js {
+  @include breakpoint(small only) {
+    .top-bar {
+      display: none;
+    }
+  }
+
+  @include breakpoint(medium) {
+    .title-bar {
+      display: none;
+    }
+  }
+
+  @include breakpoint(large) {
+    .title-bar {
+      display: none;
+    }
+  }
+}
+
+/*2. mobile-top-bar*/
+
+/* Small only */
+
+@media screen and (max-width: 39.9375em) {
+    .mobile-top-bar {
+        background-color: #393E41;
+        height: 60px;
+        .row {
+            .small-12 {
+                background-color: #393E41;
+            }
+        }
+        .top-bar-title {
+            width: 100%;
+            .menu-icon {
+                bottom: 0;
+                height: 6px;
+            }
+            a {
+                .logo {
+                    margin: 8px 0 0 10px;
+                    width: 125px;
+                }
+            }
+            .top-bar-right {
+                ul {
+                    li {
+                        a {
+                            font-size: 1.2rem;
+                            padding: 0.4rem 0.4rem;
+                            line-height: 1.7;
+                            color: $light-gray;
+                            i {
+                                font-size: 1.7rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        #responsive-menu {
+            .social {
+                margin-top: 10px;
+                .uk-icon-button {
+                    box-sizing: border-box;
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 500px;
+                    background: #eee;
+                    border: 1px solid #333;
+                    color: #2a70a6 !important;
+                    vertical-align: middle;
+                    display: -ms-inline-flexbox;
+                    display: -webkit-inline-flex;
+                    display: inline-flex;
+                    -ms-flex-pack: center;
+                    -webkit-justify-content: center;
+                    justify-content: center;
+                    -ms-flex-align: center;
+                    -webkit-align-items: center;
+                    align-items: center;
+                    -webkit-transition: .1s ease-in-out;
+                    transition: .1s ease-in-out;
+                    -webkit-transition-property: color, background-color;
+                    transition-property: color, background-color;
+                    i {
+                        color: #2a70a6 !important;
+                        font-size: 1.4rem;
+                    }
+                }
+            }
+        }
+        .mobile-menu {
+            background-color: #393E41;
+            color: $light-gray;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            ul {
+                li {
+                    a {
+                        color: $light-gray;
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+    .mobile-top-bar {
+        background-color: #393E41;
+        height: 60px;
+        .row {
+            .small-12 {
+                background-color: #393E41;
+            }
+        }
+        .top-bar-title {
+            width: 100%;
+            .menu-icon {
+                bottom: 0;
+                height: 6px;
+            }
+            a {
+                .logo {
+                    margin: 8px 0 0 10px;
+                    width: 125px;
+                }
+            }
+            .top-bar-right {
+                ul {
+                    li {
+                        a {
+                            font-size: 1.2rem;
+                            padding: 0.4rem 0.8rem;
+                            line-height: 1.7;
+                            color: $light-gray;
+                            i {
+                                font-size: 1.7rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        #responsive-menu {
+            .social {
+                margin-top: 10px;
+                .uk-icon-button {
+                    box-sizing: border-box;
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 500px;
+                    background: #eee;
+                    border: 1px solid #333;
+                    color: #2a70a6 !important;
+                    vertical-align: middle;
+                    display: -ms-inline-flexbox;
+                    display: -webkit-inline-flex;
+                    display: inline-flex;
+                    -ms-flex-pack: center;
+                    -webkit-justify-content: center;
+                    justify-content: center;
+                    -ms-flex-align: center;
+                    -webkit-align-items: center;
+                    align-items: center;
+                    -webkit-transition: .1s ease-in-out;
+                    transition: .1s ease-in-out;
+                    -webkit-transition-property: color, background-color;
+                    transition-property: color, background-color;
+                    i {
+                        color: #2a70a6 !important;
+                        font-size: 1.4rem;
+                    }
+                }
+            }
+        }
+        .mobile-menu {
+            background-color: #393E41;
+            color: $light-gray;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            ul {
+                li {
+                    a {
+                        color: $light-gray;
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*3. mobile search*/
+
+/*small only*/
+@media screen and (max-width: 39.9375em) {
+    #search-row {
+        background-color: #393E41;
+    }
+    .input-group-label {
+        border: 0;
+    }
+}
+
+/* Medium only */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+        #search-row {
+        background-color: #393E41;
+    }
+    .input-group-label {
+        border: 0;
+    }
+}

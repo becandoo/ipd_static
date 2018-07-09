@@ -1,3 +1,6 @@
+// Small only
+@media screen and (max-width: 39.9375em) { }
+
 /* Medium and up */
 @media screen and (min-width: 40em) {}
 
@@ -13,45 +16,86 @@
 //google fonts
 @import url('https://fonts.googleapis.com/css?family=Oxygen');
 
+
+// Font path
+// --------------------------
 @font-face {
-  font-family: 'FontAwesome';
-  src: url('fonts/fontawesome-webfont.eot?v=4.2.0');
-  src: url('fonts/fontawesome-webfont.eot?#iefix&v=4.2.0') format('embedded-opentype'), 
-      url('fonts/fontawesome-webfont.woff?v=4.2.0') format('woff'), 
-      url('fonts/fontawesome-webfont.ttf?v=4.2.0') format('truetype'), 
-      url('fonts/fontawesome-webfont.svg?v=4.2.0#fontawesomeregular') format('svg');
+  font-family: 'Material Design Iconic Font';
+  src: url('material-design-iconic-font/fonts/Material-Design-Iconic-Font.eot');
+  src: url('material-design-iconic-font/fonts/Material-Design-Iconic-Font.eot') format('embedded-opentype'),
+  url('material-design-iconic-font/fonts/Material-Design-Iconic-Font.woff') format('woff'),
+  url('material-design-iconic-font/fonts/Material-Design-Iconic-Font.ttf') format('truetype'),
+  url('material-design-iconic-font/fonts/Material-Design-Iconic-Font.svg#Material-Design-Iconic-Font') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 
+html,body{
+    height: 100%;
+}
 body { 
-    font-size: 11pt;
 	margin:0;
 	color: #444; 
-    font-family: 'Noto Sans', sans-serif;
 }
 
 hr {
-    margin: .8rem auto;
+    margin: 1rem auto;
 }
 
 a {
     color:#124E78;
 }
-N206STRTZCQPFOFA
+
+[type='text'], [type='password'], [type='date'], [type='datetime'], [type='datetime-local'], [type='month'], [type='week'], [type='email'], [type='number'], [type='search'], [type='tel'], [type='time'], [type='url'], [type='color'], textarea {
+        font-family: Arial,Verdana,Tahoma,Helvetica,sans-serif !important; 
+}
+
+input {
+        font-family: Arial,Verdana,Tahoma,Helvetica,sans-serif !important;
+}
+.callout {
+    a {
+        margin-bottom: 0 !important;
+    }
+}
+.text-between-lines {
+  display: block;
+  overflow: hidden;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.text-between-lines:before, .text-between-lines:after {
+  background-color: #525254;
+  content: '';
+  display: inline-block;
+  height: 2px;
+  position: relative;
+  vertical-align: middle;
+  width: 50%;
+}
+.text-between-lines:before {
+  right: .5rem;
+  margin-left: -50%;
+}
+.text-between-lines:after {
+  left: .5rem;
+  margin-right: -50%;
+}
+
 #backToTop {    
     position: fixed;
     bottom: 10px;
     right: 10px;
     color: #000000; 
     opacity:0.8;
-    padding: 7px 12px;
+    padding: 10px 20px;
     display: none;
     overflow:hidden;
     cursor:pointer;
-    color:#444;
+    color:#fefefe;
     border-radius: 60px;
     border: 2px solid #2a70a6;
+    background: #444;
 }
 
 #backToTop * {
@@ -60,17 +104,17 @@ N206STRTZCQPFOFA
 }
 
 #backToTop > span {
-    font-size: 16px;    
+    font-size: 20px;    
 }
 #backToTop > span:before {
-    content:'\f077';
-    font-family:FontAwesome;
+    content:'\f2fc';
+    font-family:Material Design Iconic Font;
     font-size: 20px;
 }
 
 #backToTop:hover {    
     opacity:1;
-    color: #444;
+
 }
 
 
@@ -102,16 +146,10 @@ div.noscript { position:relative; padding:5px; font-size:160%; font-weight:bold;
     padding: 0 !important;
 }
 
-.validationgood {
-    background-color: #ebf5dc !important;
-}
-.validationerror {
-    background-color: #f7dbdd !important;
-}
 
 //background colors using mixin ui-bg-colors
 .message {
-  @include ui-bg-colors($color-palette);
+  @include ui-colors($color-palette);
     position: relative;
   float:left;
   -webkit-transition: all .5s ease;
@@ -123,13 +161,21 @@ div.noscript { position:relative; padding:5px; font-size:160%; font-weight:bold;
 
 //text colors using mixin ui-colors
 .text {
+  @include ui-colors-dash($foundation-palette);
+}
+
+.text {
   @include ui-colors($foundation-palette);
 }
 
 .message {
-  @include ui-bg-colors($foundation-palette);
+  @include ui-colors($foundation-palette);
     position: relative;
   padding: 10px;
+}
+
+.bold {
+    font-weight: bold;
 }
 
 .errors {
@@ -158,10 +204,68 @@ div.noscript { position:relative; padding:5px; font-size:160%; font-weight:bold;
     border: 0;
     font-weight: normal;
     cursor: defualt;
+    display: inline;
 }
 
+.divider.bottom.mini {
+    margin-top: 5px;
+}
 
-.cart-price:before { display: inline-block; font-family:FontAwesome; content: "\f07a"; padding-right:10px;}
+.divider.top.mini {
+    margin-bottom: 5px;
+    border: 0;
+}
+
+.divider {
+    border-top: 1px solid #ccc;
+    height: 0;
+    width: 100%;
+    clear: both;
+}
+
+p {
+    text-rendering: optimizeLegibility;
+}
+
+.font-weight-bold {
+    font-weight: bold !important;
+}
+.loader {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+    z-index: 9999;
+	background: url('../images/mist.gif') 50% 50% no-repeat #fff;
+}
+
+.orbit {
+    z-index: 1;
+}
+
+.switch {
+    .switch-paddle {
+        border-radius: 100px;
+
+        &::after {
+            border-radius: 100px;
+        }
+    }
+}
+
+#headerannouncement {
+    padding: 5px;
+    background-color: #2f7eba;
+    color: white;
+    font-size: 1rem;
+}
+
+#closeHeaderAnnouncement {
+    color: white;
+    float: right;
+    margin-top: 5px;
+}
 //notes
 //1. removed img {border:0}
 //2. removed *html {font-size:10px;}

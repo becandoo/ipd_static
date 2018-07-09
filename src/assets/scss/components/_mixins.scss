@@ -7,6 +7,15 @@
     }
 }
 
+//ui colors
+@mixin ui-colors-dash($map){
+@each $theme, $color in $map {
+    &-#{$theme}{
+        color: $color !important;
+        }
+    }
+}
+
 @mixin ui-bg-colors($map){
 @each $theme, $color in $map {
     &.#{$theme}{

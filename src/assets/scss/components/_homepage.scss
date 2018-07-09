@@ -4,6 +4,171 @@
 
 #narrative p.p_disclaimer { clear:both; margin:10px; padding:5px; background-color:#ffdddd; font-style:italic; }
 
+#header {
+    position: relative;
+    width: 970px;
+    height: 165px;
+    overflow: hidden;
+    clear: both;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display:block;
+    margin: 0 auto;
+}
+
 .homepage-banner-image {
     max-height: 300px;
+}
+
+.home-banner {
+    margin: 0.9375rem;
+    background: #393E41;
+    padding: 10px 0 10px 0;
+    h6 {
+        margin-top: 16px;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: .8rem;
+    }
+}
+
+.signup {
+    margin-top: 15px;
+    display: block;
+}
+
+.social-banner {
+    margin-top: 15px;
+}
+
+.wpd-banner {
+    margin-top: 8px;
+}
+
+.signup2{
+    margin-top: 0;
+}
+
+.social-banner2{
+    margin-top: 20px;
+}
+$newsletter-subscribe-bg: $white;
+$newsletter-subscribe-height: 200px;
+$newsletter-subscribe-button-width: 25vw; // % of wiewport width
+
+.newsletter-subscribe {
+  background: $newsletter-subscribe-bg;
+  height: $newsletter-subscribe-height;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+
+  .input-group-field {
+    border-radius: 5000px 0 0 5000px;
+    position: relative;
+    transform: translateX(0.5rem);
+  }
+
+  .input-group {
+    margin-bottom: 0;
+  }
+
+  .newsletter-subscribe-inner {
+    text-align: center;
+  }
+
+  .input-group-button .button{
+    border-radius: 5000px;
+    position: relative;
+    transform: translateX(-0.5rem);
+    min-width: $newsletter-subscribe-button-width;
+  }
+
+  @include breakpoint(medium) {
+    padding: 0 3rem;
+  }
+
+  @include breakpoint(large) {
+    padding: 0 6rem;
+  }
+}
+
+div.brands-wrapper {
+    display: block;
+    padding-top: 15px;
+    border-top: 1px solid #ccc;
+}
+
+div.brands-wrapper {
+    display: none;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+div.brands-wrapper div.carousel {
+    position: relative;
+    width: 1180px;
+    height: 60px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.brands {
+    border: 1px solid #999;
+    border-radius: 10px;
+    img {
+        display: block;
+        margin: 0 auto;
+    }
+    h4{
+        text-align: center;
+    }
+}
+
+.category-blocks {
+    margin: 20px 0 20px 0;
+    h4 {
+        text-align: center;
+    }
+    .column {
+        font-size: 115%;
+        text-align: center; 
+        border: 1px solid white;
+        border-radius: 4px; 
+        padding: .8rem;
+        background: #2a70a6;
+        white-space: nowrap;
+        a {
+            color: $white;
+        }
+    }
+}
+
+.brands-carousal {
+    
+    img {
+        display: block;
+        margin: 0 auto;
+        border: 2px solid lighten(#393E41,10%);
+    }
+}
+
+.popular-header {
+        font-size: 24px;
+    line-height: 1;
+    min-height: 23px;
+    text-transform: uppercase;
+    margin-bottom: 21px;
+    margin-top: 21px;
+    a {
+        color: #444;
+    }
+}
+
+.brands-carousal{
+  display: none;
+}
+.brands-carousal.slick-initialized{
+  display: block;
 }

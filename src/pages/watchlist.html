@@ -1,0 +1,42 @@
+<div class="row">
+    <div class="small-12 columns">
+        <h5>Please select the notifications to enable.</h5>
+</div>
+    </div>
+<div class="row">
+    <div class="small-12 medium-3 columns">
+    <p><strong>Sale Notifications</strong></p>
+        <div class="switch large">
+          <input class="switch-input" id="sale-notifications" type="checkbox" name="saleSwitch">
+          <label class="switch-paddle" for="sale-notifications">
+            <span class="show-for-sr">Sale Notifications</span>
+            <span class="switch-active" aria-hidden="true">Yes</span>
+            <span class="switch-inactive" aria-hidden="true">No</span>
+          </label>
+        </div>
+        </div>
+        <div class="small-12 medium-3 columns">
+        <p><strong>Stock Notifications</strong></p>
+        <div class="switch large">
+          <input class="switch-input" id="stock-notifications" type="checkbox" name="stockSwitch">
+          <label class="switch-paddle" for="stock-notifications">
+            <span class="show-for-sr">Stock Notification</span>
+            <span class="switch-active" aria-hidden="true">Yes</span>
+            <span class="switch-inactive" aria-hidden="true">No</span>
+          </label>
+        </div>
+        </div>
+            <div class="small-12 medium-6 columns">
+
+    <label>Email*
+        <input type="email" value="<%=customer_email %>">
+    </label>
+        <input type="submit" class="button secondary" value="Submit">
+        <input type="submit" class="button alert" value="Cancel" data-close>
+        </div>
+    </div>
+<div class="row">
+    <div class="small-12 columns">
+        <p style="font-size:11px;">*The email provided will be used for notificatons only and will not update your email in 'My Account'.</p>
+    </div>
+</div>

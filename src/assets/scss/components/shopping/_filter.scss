@@ -1,0 +1,58 @@
+.narrowresults {
+    .dropdown{
+        border-bottom: 1px solid #ccc;
+        padding: .5rem 0;
+    }
+    .filter-dropdown {
+        font-weight: 600;
+    }
+    margin-top: 33px;
+    h5 {
+        font-size: 24px;
+        line-height: 1;
+        min-height: 23px;
+        text-transform: uppercase;
+        margin-bottom: 21px;
+    }
+    form {
+        margin-bottom: 11px;
+    }
+    ul {
+        li {
+            a {
+                color: #444;
+                padding: 0.5rem 0.3rem;
+                i {
+                    font-size: 22px;
+                    float: right;
+                }
+            }
+            ul {
+                li {
+                    a {
+                        padding: 0.5rem 1rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.dropdown.menu.vertical>li>a::after {
+    left: 4px;
+    top: 16px;
+}
+
+.narrowresults {
+    margin-top: 33px;
+    h5 {
+        font-size: 24px;
+        line-height: 1;
+        min-height: 23px;
+        text-transform: uppercase;
+        margin-bottom: 21px;
+    }
+    form {
+        margin-bottom: 11px;
+    }
+}

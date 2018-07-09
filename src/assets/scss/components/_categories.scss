@@ -31,7 +31,7 @@ div.products div.categories ul li a { display:block; width:100%; }
                 width: 100%;   
                 border: 1px solid white;   
                 padding: 1rem 1.2rem;
-                background: #1e232c;     
+                background: #2d3133;     
                 a{                                         
                     color: white !important;
                     text-align: center;
@@ -48,9 +48,6 @@ div.products div.categories ul li a { display:block; width:100%; }
         }
     }
 }
-
-/* Medium and up */
-@media screen and (min-width: 40em) {}
 
 /* Medium only */
 @media screen and (min-width: 40em) and (max-width: 63.9375em) {
@@ -73,8 +70,3 @@ div.products div.categories ul li a { display:block; width:100%; }
     }
 }
 
-/* Large and up */
-@media screen and (min-width: 64em) {}
-
-/* Large only */
-@media screen and (min-width: 64em) and (max-width: 74.9375em) {}

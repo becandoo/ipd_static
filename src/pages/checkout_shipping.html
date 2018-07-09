@@ -1,0 +1,463 @@
+<div class="row">
+    <div class="small-12 medium-9 columns ch4_checkout">
+        
+<div class="ch4_checkout">
+    <div id="ch4_paymentReview" class="ch4_contentItems">
+        <div class="ch4_checkoutHeading ch4_uppercase ch4-font-1">
+            <span class="ch4_checkMark"><i class="zmdi zmdi-check text success"></i></span>1. PAYMENT
+            <div class="ch4_editButtonRt">
+                <form method="post" action="checkout.asp">
+                <input type="hidden" name="s" value="Y6hvky23044660">
+                <input type="hidden" name="numStep" value="">
+                <input type="hidden" name="C_EmailAddress" value="jsbertu221@gmail.com">
+                <input type="hidden" name="C_Password" value="Turell2010">
+                <input type="hidden" name="C_CardholderName" id="C_CardholderName" value="JAMES BERGELSEN">
+                <input type="hidden" name="C_ShippingPostCode" id="C_ShippingPostCode" value="97030">
+                        
+                <input id="ch4_editPayment" name="submitBack" type="submit" value="Edit" class="ch4_btn ch4_btnSm ch4_btnEdit ch4-font-1 ch4_btnGray">
+                </form>
+            </div>
+        </div>
+    </div>
+    <form method="post" action="checkout.asp">
+        <div id="ch4_checkoutItems">
+            <div id="ch4_checkoutHeadingOpen" class="ch4_uppercase">2. SHIPPING</div>
+            <div class="ch4_checkoutForm" id="ch4_checkoutShippingForm">
+                <input type="hidden" name="numStep" value="3">
+                <input type="hidden" name="strPaymentSystem" value="gwlocal">
+                <input type="hidden" name="C_EmailAddress" value="jsbertu221@gmail.com">
+                <input type="hidden" name="C_Password" value="Turell2010">
+                <input type="hidden" name="C_CardholderName" id="C_CardholderName" value="JAMES BERGELSEN">
+                <input type="hidden" name="C_CardholderCompany" id="C_CardholderCompany" value="">
+                <input type="hidden" name="C_CardholderStreetAddress" id="C_CardholderStreetAddress" value="541 NE ROBERTS AVENUE">
+                <input type="hidden" name="C_CardholderTownCity" id="C_CardholderTownCity" value="GRESHAM">
+                <input type="hidden" name="C_CardholderCounty" id="C_CardholderCounty" value="OR">
+                <input type="hidden" name="C_CardholderPostCode" id="C_CardholderPostCode" value="97030">
+                <input type="hidden" name="C_CardholderCountry" id="C_CardholderCountry" value="201">
+                <input type="hidden" name="C_Telephone" id="C_Telephone" value="5037074295">
+                <div class="row">
+                    <div class="ch4_shippingSection small-12 medium-10 columns medium-centered">
+                        <h6>Shipping Information</h6>
+                        <input id="sameAsBillAdd" name="shipToBillAdd" type="checkbox" checked="">
+                        <label for="sameAsBillAdd">Same as billing address</label>                           
+                        <div class="ch4_reviewDetailsFull" id="shippingAddress">
+                            <p id="shipName">JAMES BERGELSEN</p>              
+                            <p id="shipStreet">541 NE ROBERTS AVENUE</p>
+                            <p class="shipInline" id="shipCity">GRESHAM,</p> <p class="shipInline" id="shipState">OR</p> <p class="shipInline" id="shipZip">97030</p>
+                        </div>
+                        <div class="ch4_shippingFields" style="display:none;">
+                            <div class="row">
+                                <div class="small-6 columns">
+                                    <label for="C_ShippingFirstName">First Name</label>
+                                    <input type="text" size="50" name="C_ShippingFirstName" placeholder="first name" value="" id="C_ShippingFirstName">
+                                </div>
+                                <div class="small-6 columns">
+                                    <label for="C_ShippingLastName">Last Name</label>
+                                    <input type="text" size="50" name="C_ShippingLastName" placeholder="last name" value="" id="C_ShippingLastName">
+                                </div>
+                            </div>
+                            <!--/.row-->
+                            <input type="text" name="C_ShippingStreetAddress" placeholder="street address" value="541 NE ROBERTS AVENUE" id="C_ShippingStreetAddress">
+                            <div class="row">
+                                <div class="small-9 columns">
+                                    <label for="C_ShippingTownCity">City</label>
+                                    <input type="text" name="C_ShippingTownCity" placeholder="city" value="GRESHAM" id="C_ShippingTownCity">
+                                </div>
+                                <div class="small-3 columns">
+                                    <label for="C_ShippingCounty">State</label>
+                                    <input type="text" name="C_ShippingCounty" placeholder="state" value="OR" id="C_ShippingCounty">
+                                </div>
+                            </div>
+                            <!--/.row-->
+                            <div class="row">
+                                <div class="small-4 columns">
+                                    <label for="C_ShippingPostCode">Zipcode</label>
+                                    <input type="text" name="C_ShippingPostCode" placeholder="zipcode" value="97030" id="C_ShippingPostCode">
+                                </div>
+                                <div class="small-8 columns">
+                                    <label for="C_ShippingCountry">Country</label>                                            
+                                    <select name="C_ShippingCountry" id="C_ShippingCountry" size="1">
+<option value="0">-</option>
+<option value="1">Afghanistan</option>
+<option value="2">Albania</option>
+<option value="3">Algeria</option>
+<option value="4">Andorra</option>
+<option value="5">Angola</option>
+<option value="6">Antigua &amp; Barbuda</option>
+<option value="7">Argentina</option>
+<option value="8">Armenia</option>
+<option value="9">Australia</option>
+<option value="18">Austria</option>
+<option value="19">Azerbaijan</option>
+<option value="20">Bahamas</option>
+<option value="21">Bahrain</option>
+<option value="22">Bangladesh</option>
+<option value="23">Barbados</option>
+<option value="24">Belarus</option>
+<option value="25">Belgium</option>
+<option value="26">Belize</option>
+<option value="27">Bermuda</option>
+<option value="28">Bhutan</option>
+<option value="29">Bolivia</option>
+<option value="30">Bosnia &amp; Herzegowina</option>
+<option value="31">Botswana</option>
+<option value="32">Brazil</option>
+<option value="33">British Indian Ocean Territory</option>
+<option value="34">Brunei Darussalam</option>
+<option value="35">Bulgaria</option>
+<option value="36">Burundi</option>
+<option value="37">Cambodia</option>
+<option value="38">Cameroon</option>
+<option value="39">Canada</option>
+<option value="53">Cayman Islands</option>
+<option value="54">Central African Republic</option>
+<option value="55">Chad</option>
+<option value="56">Chile</option>
+<option value="57">China</option>
+<option value="58">Christmas Island</option>
+<option value="59">Colombia</option>
+<option value="60">Congo</option>
+<option value="61">Cook Islands</option>
+<option value="62">Costa Rica</option>
+<option value="63">Croatia</option>
+<option value="64">Cuba</option>
+<option value="65">Cyprus</option>
+<option value="66">Czech Republic</option>
+<option value="67">Denmark</option>
+<option value="68">Dominica</option>
+<option value="69">Dominican Republic</option>
+<option value="70">East Timor</option>
+<option value="71">Ecuador</option>
+<option value="72">Egypt</option>
+<option value="73">El Salvador</option>
+<option value="273">England</option>
+<option value="74">Equatorial Guinea</option>
+<option value="75">Eritrea</option>
+<option value="76">Estonia</option>
+<option value="77">Ethiopia</option>
+<option value="78">Falkland Islands</option>
+<option value="79">Fiji</option>
+<option value="80">Finland</option>
+<option value="81">France</option>
+<option value="82">French Guiana</option>
+<option value="83">French Polynesia</option>
+<option value="84">Gabon</option>
+<option value="85">Gambia</option>
+<option value="86">Georgia</option>
+<option value="87">Germany</option>
+<option value="88">Ghana</option>
+<option value="89">Gibraltar</option>
+<option value="90">Greece</option>
+<option value="91">Greenland</option>
+<option value="92">Grenada</option>
+<option value="93">Guam</option>
+<option value="94">Guatemala</option>
+<option value="95">Guinea</option>
+<option value="96">Guyana</option>
+<option value="97">Haiti</option>
+<option value="98">Heard &amp; McDonald Islands</option>
+<option value="99">Honduras</option>
+<option value="100">Hong Kong</option>
+<option value="101">Hungary</option>
+<option value="102">Iceland</option>
+<option value="103">India</option>
+<option value="104">Indonesia</option>
+<option value="105">Iran</option>
+<option value="106">Ireland</option>
+<option value="107">Israel</option>
+<option value="108">Italy</option>
+<option value="109">Ivory Coast</option>
+<option value="110">Jamaica</option>
+<option value="111">Japan</option>
+<option value="112">Jordan</option>
+<option value="113">Kazakhstan</option>
+<option value="114">Kenya</option>
+<option value="116">Kuwait</option>
+<option value="117">Latvia</option>
+<option value="118">Lebanon</option>
+<option value="119">Liberia</option>
+<option value="120">Libya</option>
+<option value="121">Liechtenstein</option>
+<option value="122">Lithuania</option>
+<option value="123">Luxembourg</option>
+<option value="124">Macau</option>
+<option value="125">Macedonia</option>
+<option value="126">Madagascar</option>
+<option value="127">Malawi</option>
+<option value="128">Malaysia</option>
+<option value="129">Maldives</option>
+<option value="130">Mali</option>
+<option value="131">Malta</option>
+<option value="132">Martinique</option>
+<option value="133">Mauritania</option>
+<option value="134">Mauritius</option>
+<option value="135">Mexico</option>
+<option value="136">Micronesia</option>
+<option value="137">Moldova</option>
+<option value="138">Monaco</option>
+<option value="139">Mongolia</option>
+<option value="140">Morocco</option>
+<option value="141">Mozambique</option>
+<option value="142">Myanmar</option>
+<option value="143">Namibia</option>
+<option value="144">Nauru</option>
+<option value="145">Nepal</option>
+<option value="146">Netherlands</option>
+<option value="147">New Zealand</option>
+<option value="148">Nicaragua</option>
+<option value="149">Niger</option>
+<option value="150">Norway</option>
+<option value="151">Oman</option>
+<option value="152">Pakistan</option>
+<option value="153">Panama</option>
+<option value="154">Papua New Guinea</option>
+<option value="155">Paraguay</option>
+<option value="156">Peru</option>
+<option value="157">Philippines</option>
+<option value="158">Poland</option>
+<option value="159">Portugal</option>
+<option value="160">Puerto Rico</option>
+<option value="161">Qatar</option>
+<option value="162">Romania</option>
+<option value="163">Russia</option>
+<option value="164">Rwanda</option>
+<option value="165">Saint Lucia</option>
+<option value="166">Samoa</option>
+<option value="167">Saudi Arabia</option>
+<option value="266">Scotland</option>
+<option value="168">Senegal</option>
+<option value="271">Serbia</option>
+<option value="169">Seychelles</option>
+<option value="170">Sierra Leone</option>
+<option value="171">Singapore</option>
+<option value="172">Slovakia</option>
+<option value="173">Slovenia</option>
+<option value="174">Somalia</option>
+<option value="175">South Africa</option>
+<option value="115">South Korea</option>
+<option value="176">Spain</option>
+<option value="177">Sri Lanka</option>
+<option value="178">St. Helena</option>
+<option value="179">Suriname</option>
+<option value="180">Swaziland</option>
+<option value="181">Sweden</option>
+<option value="182">Switzerland</option>
+<option value="183">Syria</option>
+<option value="184">Taiwan</option>
+<option value="185">Tajikistan</option>
+<option value="186">Tanzania</option>
+<option value="187">Thailand</option>
+<option value="188">Togo</option>
+<option value="189">Tonga</option>
+<option value="190">Trinidad &amp; Tobago</option>
+<option value="191">Tunisia</option>
+<option value="192">Turkey</option>
+<option value="193">Turkmenistan</option>
+<option value="194">Turks &amp; Caicos Islands</option>
+<option value="195">U.S. Minor Outlying Islands</option>
+<option value="196">Uganda</option>
+<option value="197">Ukraine</option>
+<option value="198">United Arab Emirates</option>
+<option value="199">United Kingdom</option>
+<option value="200">Uruguay</option>
+<option selected="selected" value="201">USA</option>
+<option value="253">Uzbekistan</option>
+<option value="272">Vatican City</option>
+<option value="254">Venezuela</option>
+<option value="255">Vietnam</option>
+<option value="256">Virgin Islands (British)</option>
+<option value="257">Virgin Islands (U.S.)</option>
+<option value="258">Western Sahara</option>
+<option value="259">Yemen</option>
+<option value="260">Yugoslavia</option>
+<option value="261">Zaire</option>
+<option value="262">Zambia</option>
+<option value="263">Zimbabwe</option>
+</select>
+                                </div>
+                            </div>
+                            <!--/.row-->
+                        </div>
+                        <!--/.ch4_shippingFields-->
+                    </div>
+                    <!--/.ch4_shippingSection-->
+                </div>
+                <!--/.row-->
+                <div class="row">
+                    <div class="ch4_shippingSection small-12 medium-10 columns medium-centered">
+                        <h6 id="shippingMethodTitle">Choose Shipping Method</h6>
+                        <input type="hidden" id="numShipMethod" name="numShipMethod" value="73">
+                        
+                                <div class="shipping-row">
+                                    <button type="button" class="btn-shippingoptions  selected" id="73">
+                                        <div class="row">
+                                            <div class="small-12 medium-10 column">
+                                            
+                                            <i class="zmdi zmdi-truck"></i>
+                                            <h5>Standard Shipping</h5> 
+                                                                                        
+                                            </div>
+                                            <div class="small-12 medium-2 column">
+                                            
+                                                <span class="price  text success">$15.44</span>
+                                                                                              
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="small-12 columns">
+                                                <p class="description">Typically arrives 1 to 8 business days after date shipped. No PO Boxes or APO addresses.</p>
+                                            </div>
+                                        </div>
+                                    </button>
+                                </div>                                    
+								
+                                <div class="shipping-row">
+                                    <button type="button" class="btn-shippingoptions " id="3">
+                                        <div class="row">
+                                            <div class="small-12 medium-10 column">
+                                            
+                                            <i class="zmdi zmdi-truck"></i>
+                                            <h5>USPS Priority Mail</h5> 
+                                                                                        
+                                            </div>
+                                            <div class="small-12 medium-2 column">
+                                            
+                                                <span class="price ">$23.17</span>
+                                                                                              
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="small-12 columns">
+                                                <p class="description">Typically arrives up to 3 business days after date shipped</p>
+                                            </div>
+                                        </div>
+                                    </button>
+                                </div>                                    
+								
+                                <div class="row">
+                                    <div class="small-12 medium-4 medium-centered columns">
+                                        <div class="text-between-lines">OR</div>
+                                    </div>
+                                </div>
+                                
+                                <div class="shipping-row">
+                                    <button type="button" class="btn-shippingoptions " id="19">
+                                        <div class="row">
+                                            <div class="small-12 medium-10 column">
+                                            
+                                            <i class="zmdi zmdi-local-store"></i>
+                                            <h5>In-Store Pick Up</h5> 
+                                                                                        
+                                            </div>
+                                            <div class="small-12 medium-2 column">
+                                            
+                                                <span class="price"><a href="https://goo.gl/maps/YP7SJQoZeCR2" target="blank" class="button alert hollow" style="border: 1px solid #8b8b8b; border-radius: 50px; padding: 0.45rem .7rem; margin:0;"><i class="zmdi zmdi-pin" style="margin:0;"></i></a></span>
+                                                                                              
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="small-12 columns">
+                                                <p class="description">Pick up your merchandise at our warehouse in Portland Oregon. (DOES NOT SHIP!)</p>
+                                            </div>
+                                        </div>
+                                    </button>
+                                </div>                                    
+								
+                    </div>
+                    <!--/.ch4_shippingSection-->
+                    
+                </div>
+                <!--/.row-->
+                
+                <!--/.reveal-->
+                <div class="row">
+                    <div class="ch4_formButtonRow small-12 medium-10 columns medium-centered">
+                        <input class="button info" type="submit" name="submitforward" value="Next Step">
+                    </div>
+                    <!--/.ch4_formButtonRow-->
+                </div>
+                <!--/.row-->
+            </div>
+            <!--/#ch4_checkoutPaymentForm-->
+        </div>
+        <!--/#ch4_checkoutItems-->
+    </form>
+    <div class="ch4_checkoutHeadingClosed ch4_uppercase">3. ORDER REVIEW</div>
+</div>
+<!--/.ch4_checkout-->
+    </div>
+    <!--/.small-12.medium-9.columns-->
+    
+<div class="small-12 medium-3 columns">
+<div class="order-summary">
+                    <div class="header">
+                        Summary
+                              <div class="editCartButton">
+                                 <input name="edit" type="button" onclick="location.href='basket.asp'" class="ch4_btn ch4_btnSm ch4_btnEdit" value="Edit">
+                        </div>
+                    </div>
+                    <div class="summary-row promo-total" id="promotioncode">
+                        Subtotal:
+                        <span class="right text-right">
+                            
+$169.95
+                        </span>
+                    </div>
+                    
+                    <div class="summary-row promo-total" id="promotioncode">
+                        Promotional Discount:
+                        <span class="right text-right">$0.00</span>
+                    </div>
+                    
+                        <div class="summary-row shipping-total" id="estShipping">
+                            Estimated Shipping:
+                            <span class="right text-right">$0.00</span>
+                        </div>
+                        
+                            <div class="summary-row summary-total">
+                                Total:
+                                <span class="right text-right">
+                                
+$169.95</span>
+                            </div>
+         
+                           <!--<div class="summary-row" id="checkout">
+                                <a class="cartbutton checkout button info" href="/basket.asp">Edit Cart</a>
+                            </div>-->
+                        
+</div>
+<div class="items ch4_checkoutItems"><div class="header">Your Items</div>
+<ul class="bordered">
+<li>
+                        <div class="ch4_cartItem checkoutItems">
+                            <div class="ch4_cartItemImg">
+                                <a href="product.asp?s=Y6hvky23044660&amp;P_ID=12124&amp;V_ID=18460&amp;strPageHistory=basket"><img alt="" style="" src="/uploads/images_products_slideshow/thumbnail_33188.jpg">
+                            </a></div><a href="product.asp?s=Y6hvky23044660&amp;P_ID=12124&amp;V_ID=18460&amp;strPageHistory=basket">
+                            </a><div class="ch4_cartItemContent"><a href="product.asp?s=Y6hvky23044660&amp;P_ID=12124&amp;V_ID=18460&amp;strPageHistory=basket">
+                                <div class="ch4_cartItemPricing">
+                                    <input class="unitPrice margin-0" id="unitPrice" type="text" value="$169.95" size="3" style="display: none;">
+                                    <p class="ch4_cartItemPrice margin-0">$169.95</p>
+                                </div>
+                                </a><div class="ch4_cartItemOptionsContainer"><a href="product.asp?s=Y6hvky23044660&amp;P_ID=12124&amp;V_ID=18460&amp;strPageHistory=basket">
+                                    <input type="text" id="productName" class="productName" value="125529 Eros Wheel - 17 Inch Silver" style="display: none;">
+                                    </a><p class="ch4_cartItemTitle"><a href="product.asp?s=Y6hvky23044660&amp;P_ID=12124&amp;V_ID=18460&amp;strPageHistory=basket">
+                                        </a><a href="product.asp?s=Y6hvky23044660&amp;P_ID=12124&amp;V_ID=18460&amp;strPageHistory=basket"> Eros Wheel - 17 Inch Silver</a>
+                                        <span class="ch4_cartItemDescription"></span>
+                                    </p>
+                                    <p class="ch4_cartItemOptions">
+                                        <span class="ch4_cartItemOption Qty"><span class="ch4_cartItemLabel">Qty:</span>1
+                                        </span>
+                                        <span class="ch4_cartItemOption"><span class="ch4_cartItemLabel">Status:</span>&nbsp;<span class="text success">SHIPPABLE</span></span>
+                                    </p>
+                                </div>
+                                <div class="ch4_cartItemActions ch4_lgRes">
+
+                                </div>
+                            </div>
+                        </div>
+                        
+</li>
+</ul>
+</div>
+</div>
+</div>

@@ -1,0 +1,112 @@
+
+<div class="form-wrapper">
+    <div class="search-form"></div>
+    <form>
+      <div class="form-group">
+        <div class="input-group" multiselect="multiselect">
+          <label>Select your Location</label>
+          <select name="eventLocations[]" multiple="multiple">
+            <option selected="" value="">All</option>
+            <optgroup label="California">
+              <option value="6431">Berkeley</option>
+              <option value="6453">Los Angeles</option>
+              <option value="6473">San Francisco</option>
+              <option value="6577">Santa Barbara</option>
+            </optgroup>
+            <optgroup label="Colorado">
+              <option value="6442">Denver</option>
+            </optgroup>
+            <optgroup label="District of Columbia (DC)">
+              <option value="6486">District of Columbia (DC)</option>
+            </optgroup>
+            <optgroup label="Florida">
+              <option value="6460">Miami</option>
+            </optgroup>
+            <optgroup label="Illinois">
+              <option value="6437">Chicago</option>
+            </optgroup>
+            <optgroup label="Louisiana">
+              <option value="6465">New Orleans</option>
+            </optgroup>
+            <optgroup label="Massachusetts">
+              <option value="6433">Boston</option>
+              <option value="10342">Martha's Vineyard</option>
+            </optgroup>
+            <optgroup label="Michigan">
+              <option value="6424">Ann Arbor</option>
+              <option value="6445">Detroit</option>
+              <option value="7166">East Lansing</option>
+            </optgroup>
+            <optgroup label="Minnesota">
+              <option value="6481">Twin Cities</option>
+            </optgroup>
+            <optgroup label="New York">
+              <option value="65">New York City</option>
+            </optgroup>
+            <optgroup label="North Carolina">
+              <option value="6427">Asheville</option>
+            </optgroup>
+            <optgroup label="Oregon">
+              <option value="66">Portland</option>
+            </optgroup>
+            <optgroup label="Pennsylvania">
+              <option value="6469">Philadelphia</option>
+              <option value="6470">Pittsburgh</option>
+            </optgroup>
+            <optgroup label="Texas">
+              <option value="6451">Houston</option>
+            </optgroup>
+            <optgroup label="Vermont">
+              <option value="6435">Burlington</option>
+            </optgroup>
+            <optgroup label="Washington">
+              <option value="6477">Seattle</option>
+            </optgroup>
+            <optgroup label="Wisconsin">
+              <option value="6456">Madison</option>
+              <option value="6461">Milwaukee</option>
+            </optgroup>
+            <optgroup label="Australia">
+              <option value="63">Melbourne</option>
+              <option value="64">Sydney</option>
+            </optgroup>
+            <optgroup label="Ireland">
+              <option value="6447">Dublin</option>
+            </optgroup>
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="input-group">
+          <label>Type of Event</label>
+          <select name="typesOfEvents">
+            <option selected="" value="">All</option>
+            <option value="52">Mainstage</option>
+            <option value="53">StorySLAM</option>
+            <option value="54">GrandSLAM</option>
+            <option value="55">Special Events</option>
+            <option value="56">Education</option>
+            <option value="57">Community</option>
+          </select>
+        </div>
+        <div class="input-group">
+          <label>Date</label>
+          <select name="eventDate">
+            <option selected="" value="">All</option>
+            <optgroup label="2016">
+              <option value="201606">June</option>
+              <option value="201607">July</option>
+              <option value="201608">August</option>
+              <option value="201609">September</option>
+              <option value="201610">October</option>
+              <option value="201611">November</option>
+              <option value="201612">December</option>
+            </optgroup>
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <input class="btn dark centered" type="submit" value="Find Events"/>
+      </div>
+    </form>
+  </div>

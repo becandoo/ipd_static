@@ -48,24 +48,24 @@
 
 /*secondary: lighten(#40434E, 2%),*/
 $global-font-size: 100%;
-$global-width: rem-calc(1200);
+$global-width: rem-calc(1400);
 $global-lineheight: 1.5;
 $foundation-palette: (
-  primary: #1E91D6,
-  info: #1E91D6,
+  primary: #1e91d6,
+  info: #1e91d6,
   secondary: #525254,
   success: #73a32d,
-  warning: #F2BB05,
+  warning: #fea238,
   alert: #db1131,
 );
 $light-gray: #e6e6e6;
 $medium-gray: #cacaca;
 $dark-gray: #8a8a8a;
 $black: #282d35;
-$white: #fefefe;
+$white: #fff;
 $body-background: $white;
 $body-font-color: $black;
-$body-font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+$body-font-family: 'Open Sans', sans-serif;
 $body-antialiased: true;
 $global-margin: 1rem;
 $global-padding: 1rem;
@@ -74,6 +74,7 @@ $global-weight-bold: bold;
 $global-radius: 2px;
 $global-text-direction: ltr;
 $global-flexbox: false;
+$global-color-pick-contrast-tolerance: 20;
 $print-transparent-backgrounds: true;
 
 @include add-foundation-colors;
@@ -448,9 +449,9 @@ $maincontent-class: 'off-canvas-content';
 // 25. Orbit
 // ---------
 
-$orbit-bullet-background: $medium-gray;
-$orbit-bullet-background-active: $dark-gray;
-$orbit-bullet-diameter: 1.2rem;
+$orbit-bullet-background: $light-gray;
+$orbit-bullet-background-active: #2a70a6;
+$orbit-bullet-diameter: 1rem;
 $orbit-bullet-margin: 0.1rem;
 $orbit-bullet-margin-top: 0.8rem;
 $orbit-bullet-margin-bottom: 0.8rem;
@@ -602,8 +603,8 @@ $titlebar-icon-spacing: 0.25rem;
 
 $has-tip-font-weight: $global-weight-bold;
 $has-tip-border-bottom: dotted 1px $dark-gray;
-$tooltip-background-color: $black;
-$tooltip-color: $white;
+$tooltip-background-color: $light-gray;
+$tooltip-color: $black;
 $tooltip-padding: 0.75rem;
 $tooltip-font-size: $small-font-size;
 $tooltip-pip-width: 0.75rem;

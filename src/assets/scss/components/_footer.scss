@@ -22,12 +22,12 @@
 	color:$medium-gray; 
 	padding:20px 0 20px 0; 
 	background-size: 200px 178px;
-	background-color: #14171d;
+	background-color: #393e41;
 	margin-top: 10px;
 		h4 {
 			color:white; 
 		  span {
-			  border-bottom: 2px solid #00A0C6;
+			  border-bottom: 2px solid #2a70a6;
 		  }
 		}
 		a {
@@ -49,9 +49,9 @@
 #footerarea div.container ul li { position:relative; list-style-type:none; padding-left:3px; }
 #footerarea div.faq { display:block; overflow:hidden; float:left; clear:both; text-align:center; padding-top:10px; width:100%;   }
 #footerarea p { text-align:center; }
-#footerarea div.copyright { display:block; overflow:hidden; float:left; clear:both; text-align:center; padding-top:10px; width:100%; font-size:80%; color:#999999; }
+#footerarea div.copyright { display:block; overflow:hidden; float:left; clear:both; text-align:center; padding-top:10px; width:100%; font-size:80%; color:#999; }
 
-#footerarea div.copyright a:link, #footerarea div.copyright a:visited { color:#649Bf7; }
+#footerarea div.copyright a:link, #footerarea div.copyright a:visited { color:#649bf7; }
 
 #footerarea div.contactinfo { 
 	display:block; 

@@ -1,0 +1,13 @@
+.models {
+    .box {
+        a {
+            span {
+                display: block;
+                text-align: center;
+                &.modelmake {
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
